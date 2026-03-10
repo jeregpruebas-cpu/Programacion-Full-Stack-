@@ -1,6 +1,6 @@
-# Título grande
-## Subtítulo
-### Subtítulo más pequeño
+**negrita**
+*cursiva*
+
 
 *Este* es mi **proyecto de programación full stack**.
 
