@@ -1,4 +1,9 @@
-`git status`
+```bash
+git add .
+git commit -m "primer commit"
+git push
+```
+
 
 
 
