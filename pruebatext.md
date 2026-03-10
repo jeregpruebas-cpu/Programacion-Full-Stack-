@@ -1,6 +1,8 @@
-**negrita**
+Lista con puntos
+- Manzana
+- Banana
+- Naranja
 
-*cursiva*
 
 
 *Este* es mi **proyecto de programación full stack**.
