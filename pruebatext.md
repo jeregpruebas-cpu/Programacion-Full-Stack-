@@ -1,5 +1,7 @@
-# Programación Full Stack
-###  wazaaaa
+# Título grande
+## Subtítulo
+### Subtítulo más pequeño
+
 *Este* es mi **proyecto de programación full stack**.
 
 ## Contenido
