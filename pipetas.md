@@ -1,4 +1,4 @@
-# Leandro Lopez y los archivos Epstein
+# Manuel Marin y los archivos Epstein
 ## La isla: El inicio lejos del fin
 
 Casos de avistamientos:
