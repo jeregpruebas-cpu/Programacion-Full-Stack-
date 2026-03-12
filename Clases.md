@@ -62,4 +62,4 @@ En GitHub las etiquetas HTML sirven para:
 
 ---
 
-Si querés, te puedo mostrar también **5 etiquetas HTML muy usadas específicamente en README de GitHub** que hacen que un proyecto se vea mucho más profesional. 🚀
+Si querés, te puedo mostrar también **5 etiquetas HTML muy usadas específicamente en README de GitHub** que hacen que un proyecto se vea mucho más profesional. 
