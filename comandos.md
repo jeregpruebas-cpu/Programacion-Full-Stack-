@@ -24,4 +24,6 @@ git push
 
 `gh repo clone` : <repositorio>: Clona el repositorio indicado
 `git add .` : Agrega archivos a la etapa de staging
-  
+`git status` : Da el estado de cambios
+`git push` : publica en la nube los ultimos commit
+`git pull` : descarga de la nube los ultimos commit
