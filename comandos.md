@@ -17,3 +17,11 @@ También se puede agregar un archivo específico:
 git add archivo.txt
 git commit -m "cambio en archivo"
 git push
+---
+# Comandos del profe
+
+`gh auth login` : se loguea a github de forma semi automatica
+
+`gh repo clone` : <repositorio>: Clona el repositorio indicado
+`git add .` : Agrega archivos a la etapa de staging
+  
