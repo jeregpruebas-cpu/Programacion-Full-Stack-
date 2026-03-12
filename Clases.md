@@ -1,1 +1,1 @@
-# <p align=" Etiquetas HTML">
+# <p align="center"> Etiquetas HTML
