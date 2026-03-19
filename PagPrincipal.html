@@ -7,7 +7,7 @@
 
   <!-- Aca añado los atributos de los bordes de las tablas con la etiqueta "<style>"-->
 <style>
-  table, thead, td {border: 1px solid black;}
+  table, thead, td, th {border: 1px solid black;}
 </style>
 
 </head>
@@ -25,7 +25,7 @@
 
 <!-- Aca use <th> en vez de <thead> por comodidad y porque brinda mas compatibilidad con la tabla (al menos hasta donde sé) -->
 
-<table style="width: 500px; border-collapse: collapse;" border="1">
+<table style="width: 800px;">
   <tr>
     <th><h3>Región / Departamento</h3></th>
     <th><h3>Tipo de cobertura</h3></th>
@@ -125,6 +125,13 @@
 <br>
 
 <hr>
+
+<!-- El padding es para que el pie de página se limite a la parte inferior de la página -->
+<!-- El <p> es para poder añadir texto (o adornos) a los laterales de los hipervinculos, por si alguien quiere añadir algo más, como por ejemplo, información de contacto. ;) -->
+
+<footer style="padding: 10px;">
+<p> | <a href="empresa.html">Sobre Nosotros</a> | </p>
+</footer>
 
 </body>
 </html>
