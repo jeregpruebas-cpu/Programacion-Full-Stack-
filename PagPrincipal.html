@@ -7,7 +7,7 @@
 
   <!-- Aca añado los atributos de los bordes de las tablas con la etiqueta "<style>"-->
 <style>
-  table, thead, td {border: 1px solid black;}
+  table, thead, td, th {border: 1px solid black;}
 </style>
 
 </head>
@@ -30,8 +30,6 @@ el otro totalmente a la derecha-->
   <a href="PagConsulta.html"><button>Consultas</button></a>
 <a href="PagTrabajo.html"><button>Trabaja con nosotros!!</button></a>
 </div>
-<h4>Contacto:</h4>
-<span>+095-911-016</span>
 <br><br>
 
 <hr>
@@ -40,7 +38,7 @@ el otro totalmente a la derecha-->
 
 <!-- Aca use <th> en vez de <thead> por comodidad y porque brinda mas compatibilidad con la tabla (al menos hasta donde sé) -->
 
-<table style="width: 500px; border-collapse: collapse;" border="1">
+<table style="width: 800px;">
   <tr>
     <th><h3>Región / Departamento</h3></th>
     <th><h3>Tipo de cobertura</h3></th>
@@ -140,11 +138,17 @@ el otro totalmente a la derecha-->
 <br>
 
 <hr>
-<footer>
+<footer style="padding: 10px;">
   <h3>Nuestras redes sociales</h3>
   <a href="https://www.instagram.com/">Instagram</a> <br>
   <a href="https://www.facebook.com/">Facebook</a> <br>
   <a href="x.com">X</a>
+  <p> | <a href="empresa.html">Sobre Nosotros</a> | </p>
 </footer>
+
+<!-- El padding es para que el pie de página se limite a la parte inferior de la página -->
+<!-- El <p> es para poder añadir texto (o adornos) a los laterales de los hipervinculos, por si alguien quiere añadir algo más, como por ejemplo, información de contacto. ;) -->
+
+
 </body>
 </html>
