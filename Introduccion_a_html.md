@@ -43,7 +43,9 @@ footer ` <footer> </footer>`
 
 `<h2>` o `<h3>` → contenido 
 
-`<p>` → descripción
+`<p> </p>` → informacion de tipo de parrafo
+
+`<span></span>` informacion breve/abreviada tipo de texto
 
 Espacio entre lineas `<br>`
 
@@ -60,9 +62,31 @@ Diferencia con otras etiquetas
 
 `<q>Esto es una cita</q>`
 
-`<blockquote>` (cita larga)
+`<blockquote>` bloques largos de texto con sangria
 ```
 <blockquote>
   Esto es una cita larga.
 </blockquote>
 ```
+<h3> Ayuda del profe </h3>
+
+`<u></u>` Texto subrayado
+
+`<a></a>` Hipervinculo a otros lugares
+Ejemplo: `<a href="otra pagina.html" target="_blank"> >Enlace</a>`
+
+`<ul></ul>`: lista desordenada
+
+`<ol></ol>`: lista ordenada
+
+`<li></li>`: indica item de la lista
+
+`<table></table>`:
+
+`<tr></tr>` indica una fila
+
+`<td></td>`: datos dentro de la tabla 
+
+`<thead></thead>` : categorias de tabla
+
+`<tbody></tbody>`: Cuerpo de la tabla con los datos 
