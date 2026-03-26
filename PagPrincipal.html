@@ -1,205 +1,231 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Inicio</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Inicio</title>
 
   <!-- Aca añado los atributos de los bordes de las tablas con la etiqueta "<style>"-->
-<style>
-  table, thead, td, th {border: 1px solid black;}
-  a { color: rgb(9, 37, 251);} 
+  <style>
+    table,
+    thead,
+    td,
+    th {
+      border: 1px solid black;
+    }
 
-img { height: 200px;}
+    a {
+      color: rgb(9, 37, 251);
+    }
 
-hr {color: black;}
+    img {
+      height: 200px;
+    }
+
+    hr {
+      color: black;
+    }
+
     article {
-        text-align: center;
-        border: 1px solid black;
-        border-radius: 10px;
-        margin: 20px;}
+      text-align: center;
+      border: 1px solid black;
+      border-radius: 10px;
+      margin: 20px;
+    }
 
-button {
-   
-    background-color: white;
-    color: black;
-    border: 2px solid black;
-    padding: 5px 20px;
-    cursor: pointer;
-    transition: 0.2s;
-}
+    button {
 
-button:hover {
-    background-color: black;
-    color: white;
-}
-</style>
+      background-color: white;
+      color: black;
+      border: 2px solid black;
+      padding: 5px 20px;
+      cursor: pointer;
+      transition: 0.2s;
+    }
+
+    button:hover {
+      background-color: black;
+      color: white;
+    }
+  </style>
 
 </head>
+
 <body>
   <br>
   <br>
-  <div style="text-align: center;" >
+  <div style="text-align: center;">
     <img style="height: 100px;" src="Todo en Blanco/logo.png" alt="Logo">
-</div>
+  </div>
   <h2 style="text-align: center; color: gray;">Solo aspira el blanco</h2>
-<div style="text-align: center;">
-<button>Ingresar al sistema</button>
-</div>
-<br>
-<!--Botones pedidos por el cliente que enviaran a las paginas correspondientes-->
-<div style="display: flex; justify-content: space-between;">
-<!-- 
+  <div style="text-align: center;">
+    <button>Ingresar al sistema</button>
+  </div>
+  <br>
+  <!--Botones pedidos por el cliente que enviaran a las paginas correspondientes-->
+  <div style="display: flex; justify-content: space-between;">
+    <!-- 
 display: flex; pone los elementos en línea
 justify-content: space-between; uno se va totalmente a la izquierda
 el otro totalmente a la derecha-->
-  <a href="PagConsulta.html"><button>Consultas</button></a>
-<a href="PagTrabajo.html"><button>¡Trabaja con nosotros!</button></a>
-</div>
-<br><br>
+    <a href="PagConsulta.html"><button>Consultas</button></a>
+    <a href="PagTrabajo.html"><button>¡Trabaja con nosotros!</button></a>
+  </div>
+  <br><br>
 
-<hr color="black">
+  <hr color="black">
 
-<h1>Tabla de <span style="text-decoration: underline;"> Cobertura Logistica</span></h1>
+  <h1>Tabla de <span style="text-decoration: underline;"> Cobertura Logistica</span></h1>
 
-<!-- Aca use <th> en vez de <thead> por comodidad y porque brinda mas compatibilidad con la tabla (al menos hasta donde sé) -->
+  <!-- Aca use <th> en vez de <thead> por comodidad y porque brinda mas compatibilidad con la tabla (al menos hasta donde sé) -->
 
-<table style="width: 800px; margin: auto;" >
-  <tr>
-    <th><h3>Región / Departamento</h3></th>
-    <th><h3>Tipo de cobertura</h3></th>
-    <th><h3>Frecuencia de entrega</h3></th>
-  </tr>
+  <table style="width: 800px; margin: auto;">
+    <tr>
+      <th>
+        <h3>Región / Departamento</h3>
+      </th>
+      <th>
+        <h3>Tipo de cobertura</h3>
+      </th>
+      <th>
+        <h3>Frecuencia de entrega</h3>
+      </th>
+    </tr>
 
-  <tr>
-    <td>Artigas</td>
-    <td>Total</td>
-    <td>Diario</td>
-  </tr>
-  <tr>
-    <td>Salto</td>
-    <td>Total</td>
-    <td>Diario</td>
-  </tr>
-  <tr>
-    <td>Rivera</td>
-    <td>Total</td>
-    <td>Diario</td>
-  </tr>
-  <tr>
-    <td>Tacuarembó</td>
-    <td>Total</td>
-    <td>Diario</td>
-  </tr>
+    <tr>
+      <td>Artigas</td>
+      <td>Total</td>
+      <td>Diario</td>
+    </tr>
+    <tr>
+      <td>Salto</td>
+      <td>Total</td>
+      <td>Diario</td>
+    </tr>
+    <tr>
+      <td>Rivera</td>
+      <td>Total</td>
+      <td>Diario</td>
+    </tr>
+    <tr>
+      <td>Tacuarembó</td>
+      <td>Total</td>
+      <td>Diario</td>
+    </tr>
 
-  <tr>
-    <td>Durazno</td>
-    <td>Total</td>
-    <td>Diario</td>
-  </tr>
-  <tr>
-    <td>Florida</td>
-    <td>Total</td>
-    <td>Diario</td>
-  </tr>
-  <tr>
-    <td>Paysandú</td>
-    <td>Parcial</td>
-    <td>Diario</td>
-  </tr>
-  <tr>
-    <td>Río Negro</td>
-    <td>Parcial</td>
-    <td>Diario</td>
-  </tr>
+    <tr>
+      <td>Durazno</td>
+      <td>Total</td>
+      <td>Diario</td>
+    </tr>
+    <tr>
+      <td>Florida</td>
+      <td>Total</td>
+      <td>Diario</td>
+    </tr>
+    <tr>
+      <td>Paysandú</td>
+      <td>Parcial</td>
+      <td>Diario</td>
+    </tr>
+    <tr>
+      <td>Río Negro</td>
+      <td>Parcial</td>
+      <td>Diario</td>
+    </tr>
 
-  <tr>
-    <td>Cerro Largo</td>
-    <td>Parcial</td>
-    <td>Semanal</td>
-  </tr>
-  <tr>
-    <td>Treinta y Tres</td>
-    <td>Parcial</td>
-    <td>Semanal</td>
-  </tr>
-  <tr>
-    <td>Lavalleja</td>
-    <td>Parcial</td>
-    <td>Semanal</td>
-  </tr>
-  <tr>
-    <td>Rocha</td>
-    <td>Bajo demanda</td>
-    <td>Quincenal</td>
-  </tr>
+    <tr>
+      <td>Cerro Largo</td>
+      <td>Parcial</td>
+      <td>Semanal</td>
+    </tr>
+    <tr>
+      <td>Treinta y Tres</td>
+      <td>Parcial</td>
+      <td>Semanal</td>
+    </tr>
+    <tr>
+      <td>Lavalleja</td>
+      <td>Parcial</td>
+      <td>Semanal</td>
+    </tr>
+    <tr>
+      <td>Rocha</td>
+      <td>Bajo demanda</td>
+      <td>Quincenal</td>
+    </tr>
 
-  <tr>
-    <td>Colonia</td>
-    <td>Bajo demanda</td>
-    <td>Quincenal</td>
-  </tr>
-  <tr>
-    <td>San José</td>
-    <td>Bajo demanda</td>
-    <td>Quincenal</td>
-  </tr>
-  <tr>
-    <td>Canelones</td>
-    <td>Sin cobertura</td>
-    <td>-</td>
-  </tr>
-  <tr>
-    <td>Maldonado</td>
-    <td>Sin cobertura</td>
-    <td>-</td>
-  </tr>
-  <tr>
-    <td>Montevideo</td>
-    <td>Sin cobertura</td>
-    <td>-</td>
-  </tr>
-</table>
+    <tr>
+      <td>Colonia</td>
+      <td>Bajo demanda</td>
+      <td>Quincenal</td>
+    </tr>
+    <tr>
+      <td>San José</td>
+      <td>Bajo demanda</td>
+      <td>Quincenal</td>
+    </tr>
+    <tr>
+      <td>Canelones</td>
+      <td>Sin cobertura</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>Maldonado</td>
+      <td>Sin cobertura</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>Montevideo</td>
+      <td>Sin cobertura</td>
+      <td>-</td>
+    </tr>
+  </table>
 
 
 
-<br>
-<hr color="black">
+  <br>
+  <hr color="black">
 
-<h1>Categorías de Productos</h1>
+  <h1>Categorías de Productos</h1>
 
-    <article style="margin: 2px solid black;">
-        <h2>Hogar y Muebles</h2>
-        <img src="Todo en Blanco/muebles.png" alt="Muebles">
-        <p>Muebles, electrodomésticos y artículos de decoración que pueden variar en tamaño y requieren manipulación cuidadosa.</p>
-    </article>
+  <article style="margin: 2px solid black;">
+    <h2>Hogar y Muebles</h2>
+    <img src="Todo en Blanco/muebles.png" alt="Muebles">
+    <p>Muebles, electrodomésticos y artículos de decoración que pueden variar en tamaño y requieren manipulación
+      cuidadosa.</p>
+  </article>
 
-    <article style="margin: 2px solid black;">
-        <h2>Tecnología</h2>
-        <img src="Todo en Blanco/tecnologia.png" alt="Tecnologia">
-        <p>Dispositivos electrónicos como celulares, computadoras y televisores, considerados productos de alto valor.</p>
-    </article>
+  <article style="margin: 2px solid black;">
+    <h2>Tecnología</h2>
+    <img src="Todo en Blanco/tecnologia.png" alt="Tecnologia">
+    <p>Dispositivos electrónicos como celulares, computadoras y televisores, considerados productos de alto valor.</p>
+  </article>
 
-    <article style="margin: 2px solid black;">
-        <h2>Textil y Calzado</h2>
-        <img src="Todo en Blanco/textil.png" alt="Textil">
-       <p>Prendas de vestir, telas y calzado transportados con protección contra humedad y suciedad.</p>
-    </article>
+  <article style="margin: 2px solid black;">
+    <h2>Textil y Calzado</h2>
+    <img src="Todo en Blanco/textil.png" alt="Textil">
+    <p>Prendas de vestir, telas y calzado transportados con protección contra humedad y suciedad.</p>
+  </article>
 
-<br>
+  <br>
 
-<hr color="black">
-<footer style="padding: 10px;">
-  <h3>Nuestras redes sociales</h3>
-  
-  
- 
-  <p> | <a target="_blank" href="https://www.facebook.com/">Facebook</a> | <a target="_blank" href="https://www.x.com/">X</a> | <a target="_blank" href="https://www.instagram.com/">Instagram</a> | <a target="_blank" href="PagEmpresa.html">Sobre Nosotros</a> | </p>
-</footer>
+  <hr color="black">
+  <footer style="padding: 10px;">
+    <h3>Nuestras redes sociales</h3>
 
-<!-- El padding es para que el pie de página se limite a la parte inferior de la página -->
-<!-- El <p> es para poder añadir texto (o adornos) a los laterales de los hipervinculos, por si alguien quiere añadir algo más, como por ejemplo, información de contacto. ;) -->
-<p style="text-align: center;">© 2026 Todo en Blanco - Todos los derechos reservados, y unas cositas más ;)</p>
+
+
+    <p> | <a target="_blank" href="https://www.facebook.com/">Facebook</a> | <a target="_blank"
+        href="https://www.x.com/">X</a> | <a target="_blank" href="https://www.instagram.com/">Instagram</a> | <a
+        target="_blank" href="PagEmpresa.html">Sobre Nosotros</a> | </p>
+  </footer>
+
+  <!-- El padding es para que el pie de página se limite a la parte inferior de la página -->
+  <!-- El <p> es para poder añadir texto (o adornos) a los laterales de los hipervinculos, por si alguien quiere añadir algo más, como por ejemplo, información de contacto. ;) -->
+  <p style="text-align: center;">© 2026 Todo en Blanco - Todos los derechos reservados, y unas cositas más ;)</p>
 
 </body>
+
 </html>
