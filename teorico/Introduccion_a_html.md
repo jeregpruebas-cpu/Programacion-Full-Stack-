@@ -8,6 +8,8 @@
 - Etiquetas de titulo `<h1>`
 - Descripciones `<p>`
 - Anadir imagen `<img>`
+- <figure>...</figure>: Seccion donde se coloca imagen. 
+- <figcaption>...</figcaption>: Texto descriptor de la imagen.
 - Negrita `<b>`
 - Lista ordenada `<ol>`
 - Lista numerada `<li value="x">` si se quiere empezar por un numero en especifico 
