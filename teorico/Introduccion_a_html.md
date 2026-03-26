@@ -83,7 +83,7 @@ Ejemplo: `<a href="otra pagina.html" target="_blank"> >Enlace</a>`
 
 `<li></li>`: indica item de la lista
 
-`<table></table>`:
+`<table></table>`: crea una tabla en la pagina
 
 `<tr></tr>` indica una fila
 
