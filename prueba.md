@@ -15,7 +15,7 @@
    <p>Si desea saber sobre nosotros puede dirijirse a:</p>
    <a href="empresa.html">Sobre Nosotros</a>
 <div style="text-align: center;">
-   <a href="PagPrincipal.html"><button>Volver</button></a>
+   <a href="Index.html"><button>Volver</button></a>
    </div>
 </body>
 </html>
