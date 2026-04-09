@@ -1,53 +1,57 @@
 Etiquetas HTML
+
 Etiquetas Obligatorias
+
 html: Etiqueta principal donde se envuelve todo.
 head: Contiene los metadatos de la pagina.
+
 Elementos visuales de la pagina
-<button>...</button>: Crea botones. Tiene etiqueta de apertura y cierre. Ejemplo <button type="button">Haz clic aquí </button>
 
-<h1></h1>: Titulos de la pagina.
+``<button>``...</button>: Crea botones. Tiene etiqueta de apertura y cierre. Ejemplo <button type="button">Haz clic aquí </button>
 
-<img>: Inserta imagenes. Ejemplo <img src="ruta" alt="texto alternativo">
+`<h1></h1>`: Titulos de la pagina.
 
-<figure>...</figure>: Seccion donde se colocan imagenes.
+`<img>:` Inserta imagenes. Ejemplo <img src="ruta" alt="texto alternativo">
 
-<figcaption>...</figcaption>: Texto descriptor de una imagen.
+`<figure>...</figure>`: Seccion donde se colocan imagenes.
 
-<p>...</p>: Informacion de tipo parrafo.
+`<figcaption>...</figcaption>`: Texto descriptor de una imagen.
 
-<span></span>: Informacion breve/abreviada de tipo texto.
+`<p>...</p>`: Informacion de tipo parrafo.
 
-<blockquote></blockquote>: Bloques largos de texto con sangria.
+`<span></span>`: Informacion breve/abreviada de tipo texto.
 
-<q></q>: Citas cortas.
+`<blockquote></blockquote>`: Bloques largos de texto con sangria.
 
-<cite></cite>: citado de titulo de una obra en cursiva.
+`<q></q>`: Citas cortas.
 
-<b></b>: Texto en negrita.
+`<cite></cite>`: citado de titulo de una obra en cursiva.
 
-<i></i>: Texto en cursiva.
+`<b></b>`: Texto en negrita.
 
-<u></u>: Texto subrayado.
+`<i></i>`: Texto en cursiva.
 
-<a>...</a>: Hipervinculo a otros lugares. Ejemplo: <a href="otraPagina.html" target="_blank">Enlace</a>
+`<u></u>`: Texto subrayado.
 
-<ul></ul>: Lista desordenada.
+`<a>...</a>`: Hipervinculo a otros lugares. Ejemplo: <a href="otraPagina.html" target="_blank">Enlace</a>
 
-<ol></ol>: Lista ordenada.
+`<ul></ul>`: Lista desordenada.
 
-<li></li>: Indica item de la lista.
+`<ol></ol>`: Lista ordenada.
 
-<table></table>: Indica seccion con tabla.
+`<li></li>`: Indica item de la lista.
 
-<th><th>: Encabezado de la tabla.
+`<table></table>`: Indica seccion con tabla.
 
-<tr></tr>: Indica una fila.
+`<th><th>`: Encabezado de la tabla.
 
-<td></td>: Datos dentro de una fila.
+`<tr></tr>`: Indica una fila.
 
-<thead></thead>: Categorias de la tabla.
+`<td></td>`: Datos dentro de una fila.
 
-<tbody></tbody>: Cuerpo de la tabla con los datos.
+`<thead></thead>`: Categorias de la tabla.
+
+`<tbody></tbody>`: Cuerpo de la tabla con los datos.
 
 `<form>` → Contenedor de formularios
 - `action` → URL de destino de los datos  
