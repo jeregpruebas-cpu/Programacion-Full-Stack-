@@ -84,16 +84,19 @@ input, select, textarea {
  <br>
  <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce.</span>
 <br>
-<form action="#" method="post" style="text-align: center;" >
+<form action="PagConfirmacion.html"  style="text-align: center;" >
 <label for="nombre">Nombre:</label>
-<input type="text" id="nombre" required  placeholder="Ej: Juan">
+<input type="text" id="nombre" name="nombre" required  placeholder="Ej: Juan" pattern="[A-Za-zÁÉÍÓÚáéíóúñÑ ]+" maxlength="30">
 
 
 <label for="apellido">Apellido:</label>
-<input type="text" id="apellido" required  placeholder="Ej: Alvarez">
+<input type="text" id="apellido" name="apellido"  placeholder="Ej: Alvarez">
 
 <label for="email">Email:</label>
-<input type="text" id="email" required  placeholder="Ej: Maria@gmail.com">
+<input type="email" id="email" name="email"  placeholder="Ej: Maria@gmail.com" maxlength="50">
+
+<label for="telefono">Numero telefonico:</label>
+<input type="tel" id="telefono" name="telefono"  placeholder="Ej: 099123456" pattern="09[0-9]{7}" maxlength="9" inputmode="numeric">
 
 <label for="categoria">Categoria:</label>
  <select id="categoria" name="categoria" required>
@@ -109,11 +112,14 @@ input, select, textarea {
     required 
     placeholder="Describe tu problema..."
     rows="5"
+    maxlength="300"
   ></textarea>
-
+  <br>
+ 
+  <button type="submit">Enviar consulta</button>
 
 </form>
-<button type="enviar">Enviar consulta</button>
+
 
 <hr color="black">
 </body>
