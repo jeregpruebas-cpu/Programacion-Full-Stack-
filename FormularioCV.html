@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <title>Envianos tu CV</title>
+
+    <style>
+      
+
+    </style>
+</head>
+<!--
+añadir minimos detalles, tales como campos obligatorios, limites de caracteres, y formato de caracteres.
+borrar el sistema de correo antiguo, y reemplazarlo por un formulario que permita a los usuarios subir su CV directamente a la página.
+adaptar al formato de Guerra de FormularioCV.html, con un diseño más limpio y profesional, utilizando colores neutros y una tipografía legible.
+-->
+<body>
+
+    <h1>Formulario de trabajo</h1>
+    <p>Campos obligatorios con (<span style="color: red;">*</span>)</p>
+    <div>
+    <form action="envio.html" method="get">
+        <label for="email"><span style="color: red;">*</span>Correo:</label><br>
+        <input name="email" placeholder="Ingrese correo aquí..." maxlength="40" required></input><br><br>
+    </div>
+    <div>
+        <label for="descripcion" ><span style="color: red;">*</span>Descripción:</label><br>
+        <textarea placeholder="Dejanos saber un poco mas sobre vos..." name="descripcion" maxlength="300" required></textarea><br><br>
+    </div>
+    <div>
+        <label><span style="color: red;">*</span>Envianos tu CV:</label><br>
+        <input type="file" required></input><br><br>
+        <input type="submit" value="Submit"></input><br><br>
+    </div>
+
+
+
+    </form>
+</body>
+
+</html>
