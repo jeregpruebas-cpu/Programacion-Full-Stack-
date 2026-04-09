@@ -8,34 +8,92 @@
 </head>
 
 <body>
-    <a href="PagTrabajo.html"><button>Volver</button></a>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: white;
+            color: black;
+            margin: 0;
+        }
+
+
+
+    
+
+        /* Títulos */
+        h1,
+        h2,
+        h3 {
+            text-align: center;
+        }
+
+
+        /* Botones */
+        button {
+
+            background-color: white;
+            color: black;
+            border: 2px solid black;
+            padding: 5px 15px;
+            cursor: pointer;
+            transition: 0.2s;
+        }
+
+        button:hover {
+            background-color: black;
+            color: white;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 20px;
+            border-top: 2px solid black;
+            margin-top: 40px;
+        }
+
+        label {
+            display: block;
+            /* hace que quede arriba */
+            margin-bottom: 5px;
+            padding: 5px;
+        }
+
+        input {
+            width: 30%;
+            /* ocupa parte el ancho */
+            padding: 8px;
+            border-radius: 5px;
+            border: 1px solid #aaa;
+        }
+    </style>
+
+    <a href="PagTrabajo.html"><button style="margin: 15px 15px;">Volver</button></a>
     <br>
     <h1>Formulario de trabajo</h1>
-    <p>Campos obligatorios con (<span style="color: red;">*</span>)</p>
-    <div>
-        <form action="envio.html" method="get">
-            <label for="email"><span style="color: red;">*</span>Correo:</label><br>
+    <p align="center">Campos obligatorios con (<span style="color: red;">*</span>)</p>
+    <div align="center">
+        <form action="PagEnvio.html" method="get">
+            <label for="email"><span style="color: red;">*</span> Correo:</label><br>
             <input name="email" placeholder="Ej: Jose@correo.com" maxlength="40" required></input><br><br>
+
+            <label for="descripcion"><span style="color: red;">*</span> Descripción:</label><br>
+            <textarea style="width: 30%; height: 150px; padding: 8px; border-radius: 5px; border: 1px solid #aaa;"
+                placeholder="Dejanos saber un poco mas sobre vos..." name="descripcion" maxlength="300"
+                required></textarea><br>
+            <br>
+
+            <label><span style="color: red;">*</span> Envianos tu CV (.pdf):</label><br>
+            <input type="file" accept=".pdf" required></input><br><br>
+            <input style="width: 20px;" type="checkbox" name="contactarse">Acepto ser contactado por la
+            empresa</input><br>
+
+            <br>
+            <button type="submit" value="Submit">Enviar</button><br>
+
+            <br>
     </div>
-    <div>
-        <label for="descripcion"><span style="color: red;">*</span>Descripción:</label><br>
-        <textarea placeholder="Dejanos saber un poco mas sobre vos..." name="descripcion" maxlength="300"
-            required></textarea><br>
-        <br>
-    </div>
-    <div>
-        <label><span style="color: red;">*</span>Envianos tu CV (.pdf):</label><br>
-        <input type="file" accept=".pdf" required></input><br><br>
-        <input type="checkbox" name="contactarse">Acepto ser contactado por la empresa</input><br>
-
-        <br>
-        <input type="submit" value="Submit"></input><br>
-
-        <br>
-    </div>
-
-
-
     </form>
 </body>
 
