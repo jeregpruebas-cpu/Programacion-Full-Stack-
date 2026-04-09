@@ -1,58 +1,134 @@
 # <p align=center>Introduccion al uso de formularios con etiquetas html
 ---
-## ISSUE 1: Formulario de consultas
+##  ISSUE 1: Formulario de consultas  
 
-Etiquetas necesarias y su significado:
+### Etiquetas, significado y atributos
 
-``<form>`` → Contenedor principal del formulario; agrupa todos los campos y permite enviar los datos.
+- `<form>` → Contenedor principal del formulario; agrupa los campos y permite enviar datos.  
+  - **Atributos:**  
+    - `action` → URL donde se envían los datos  
+    - `method` → Método de envío (`GET` o `POST`)
 
-``<label>`` → Texto descriptivo asociado a cada campo; indica al usuario qué debe ingresar.
+- `<label>` → Texto descriptivo asociado a cada campo.  
+  - **Atributos:**  
+    - `for` → Vincula el label con un input específico  
 
-``<input>`` → Campo de entrada de datos (nombre, apellido, teléfono, email).
+- `<input>` → Campo de entrada de datos.  
+  - **Atributos:**  
+    - `type="text"` → Para nombre y apellido  
+    - `type="tel"` → Para teléfono  
+    - `type="email"` → Para correo electrónico  
+    - `name` → Identificador del campo  
+    - `required` → Campo obligatorio  
+    - `placeholder` → Texto guía  
+    - `pattern` → Validación personalizada  
+    - `autocomplete` → Autocompletado de datos  
+    - `inputmode="numeric"` → Teclado numérico en móviles  
 
-``<select>`` → Lista desplegable que permite elegir una opción.
+- `<select>` → Lista desplegable de opciones.  
+  - **Atributos:**  
+    - `name`  
+    - `required`  
 
-``<option>`` → Cada una de las opciones dentro de la lista desplegable.
+- `<option>` → Opciones dentro de la lista.  
+  - **Atributos:**  
+    - `value` → Valor enviado al formulario  
 
-``<textarea>`` → Campo de texto extendido para descripciones largas.
+- `<textarea>` → Campo de texto largo para descripciones.  
+  - **Atributos:**  
+    - `name`  
+    - `required`  
+    - `placeholder`  
+    - `rows` → Cantidad de filas visibles  
+    - `cols` → Cantidad de columnas visibles  
 
-``<button>`` → Botón que permite enviar el formulario.
+- `<button>` → Botón de envío del formulario.  
+  - **Atributos:**  
+    - `type="submit"`  
 
-## ISSUE 2: Formulario de empleo
+---
 
-Etiquetas necesarias y su significado:
+##  ISSUE 2: Formulario de empleo  
 
-``<form>`` → Contenedor del formulario de postulación laboral.
+### Etiquetas, significado y atributos
 
-``<label>`` → Describe cada campo solicitado al usuario.
+- `<form>` → Contenedor del formulario de postulación.  
+  - **Atributos:**  
+    - `action`  
+    - `method`  
 
-``<input>`` → Campo de entrada (correo electrónico y carga de archivo).
+- `<label>` → Describe los campos.  
+  - **Atributos:**  
+    - `for`  
 
-``<textarea>`` → Espacio amplio para que el usuario escriba información adicional.
+- `<input>` → Campo de entrada de datos.  
+  - **Atributos:**  
+    - `type="email"` → Correo electrónico  
+    - `type="file"` → Subida de archivo  
+    - `name`  
+    - `required`  
+    - `accept=".pdf"` → Solo archivos PDF  
 
-``<button>`` → Botón para enviar la solicitud.
+- `<textarea>` → Espacio para escribir información adicional.  
+  - **Atributos:**  
+    - `name`  
+    - `required`  
+    - `placeholder`  
 
-## ISSUE 3: Uso de placeholder
+- `<input type="checkbox">` → Casilla de confirmación.  
+  - **Atributos:**  
+    - `name`  
+    - `required`  
 
-Etiquetas necesarias y su significado:
+- `<button>` → Botón de envío.  
+  - **Atributos:**  
+    - `type="submit"`  
 
-``<input>`` → Campo de entrada donde se puede mostrar una guía dentro del mismo.
+---
 
-``<textarea>`` → Campo de texto largo que también permite mostrar una guía interna.
+## ISSUE 3: Uso de placeholder  
 
+### Etiquetas, significado y atributos
 
-(El atributo placeholder se aplica sobre estas etiquetas para mostrar texto de ayuda dentro del campo.)
+- `<input>` → Campo de entrada con guía interna.  
+  - **Atributos:**  
+    - `type`  
+    - `name`  
+    - `placeholder`  
 
-## ISSUE 4: Login de empleados
+- `<textarea>` → Campo de texto largo con guía.  
+  - **Atributos:**  
+    - `name`  
+    - `placeholder`  
+    - `rows`  
+    - `cols`  
 
-Etiquetas necesarias y su significado:
+---
 
-``<form>`` → Contenedor del sistema de ingreso de usuarios.
+## ISSUE 4: Login de empleados  
 
-``<label>``→ Indica qué dato debe ingresar el usuario (cédula, contraseña).
+### Etiquetas, significado y atributos
 
-``<input>`` → Campo de entrada para credenciales de acceso.
+- `<form>` → Contenedor del sistema de inicio de sesión.  
+  - **Atributos:**  
+    - `action`  
+    - `method`  
 
-``<button>`` → Botón para enviar los datos e intentar iniciar sesión.
+- `<label>` → Describe los campos de acceso.  
+  - **Atributos:**  
+    - `for`  
 
+- `<input>` → Campos de ingreso de datos.  
+  - **Atributos:**  
+    - `type="text"` → Para cédula  
+    - `type="password"` → Para contraseña  
+    - `name`  
+    - `required`  
+    - `pattern` → Validación (solo números)  
+    - `inputmode="numeric"` → Teclado numérico  
+    - `placeholder`  
+
+- `<button>` → Botón de ingreso.  
+  - **Atributos:**  
+    - `type="submit"`  
 
