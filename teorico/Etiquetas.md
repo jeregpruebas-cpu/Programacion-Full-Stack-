@@ -4,10 +4,14 @@ Etiquetas Obligatorias
 
 html: Etiqueta principal donde se envuelve todo.
 head: Contiene los metadatos de la pagina.
+`<body>` → Contiene todo el contenido visible de la página
+`<!DOCTYPE html>` → Define que el documento es HTML5
 
 Elementos visuales de la pagina
 
-``<button>``...</button>: Crea botones. Tiene etiqueta de apertura y cierre. Ejemplo <button type="button">Haz clic aquí </button>
+`<button>` → Crea botones interactivos
+- type → Tipo de botón (`submit`, `button`, `reset`) Tiene etiqueta de apertura y cierre. 
+Ejemplo `<button type="button">Haz clic aquí </button>`
 
 `<h1></h1>`: Titulos de la pagina.
 
@@ -27,6 +31,8 @@ Elementos visuales de la pagina
 
 `<cite></cite>`: citado de titulo de una obra en cursiva.
 
+`<style>` → Permite agregar estilos CSS dentro del HTML
+
 `<b></b>`: Texto en negrita.
 
 `<i></i>`: Texto en cursiva.
@@ -44,6 +50,12 @@ Elementos visuales de la pagina
 `<table></table>`: Indica seccion con tabla.
 
 `<th><th>`: Encabezado de la tabla.
+
+`<div></div>` → Contenedor genérico para agrupar elementos
+
+`<br>` → Salto de línea
+
+`<hr>` → Línea horizontal separadora
 
 `<tr></tr>`: Indica una fila.
 
@@ -95,3 +107,5 @@ Elementos visuales de la pagina
 - `cols` → Número de columnas visibles  
 
 ---
+`maxlength` → Limita la cantidad máxima de caracteres
+`type="submit"` → Envía el formulario y activa validaciones
