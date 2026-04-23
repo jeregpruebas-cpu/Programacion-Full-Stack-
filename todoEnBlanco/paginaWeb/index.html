@@ -5,153 +5,105 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Inicio</title>
-
+  <link rel="stylesheet" href="../css/index.css">
+  <link rel="stylesheet" href="../css/global.css">
   <!-- Aca añado los atributos de los bordes de las tablas con la etiqueta "<style>"-->
-  <style>
-    table,
-    thead,
-    td,
-    th {
-      border: 1px solid black;
-    }
-
-    figure {
-      text-align: center;
-      border: 1px solid black;
-    }
-
-    a {
-      color: rgb(9, 37, 251);
-    }
-
-    img {
-      height: 200px;
-      
-    }
-
-    hr {
-      color: black;
-    }
-
-   
-
-    button {
-
-      background-color: white;
-      color: black;
-      border: 2px solid black;
-      padding: 5px 20px;
-      cursor: pointer;
-      transition: 0.2s;
-    }
-
-    button:hover {
-      background-color: black;
-      color: white;
-    }
-  </style>
 
 </head>
 
 <body>
-<br>
+  <br>
+  <header>
     <h2>Ingreso al sistema</h2>
     <form action="procesar_login.php" method="post">
-        <label for="cedula">Cédula:</label><br>
-        <input 
-            type="text" 
-            id="cedula" 
-            name="cedula"
-            inputmode="numeric"
-            pattern="[0-9]+"
-            placeholder="Solo números"
-            required
-        ><br><br>
-        <label for="password">Contraseña:</label><br>
-        <input 
-            type="password" 
-            id="password" 
-            name="password"
-            required
-        ><br><br>
-           <button type="submit">Ingresar</button>
+      <label for="cedula">Cédula:</label><br>
+      <input type="text" id="cedula" name="cedula" inputmode="numeric" pattern="[0-9]+" placeholder="Solo números"
+        required><br><br>
+      <label for="password">Contraseña:</label><br>
+      <input type="password" id="password" name="password" required><br><br>
+      <button type="submit">Ingresar</button>
     </form>
 
-  <br>
-  <br>
-  <div style="text-align: center;">
-    <img style="height: 100px;" src="../assets/img/logo.png" alt="Logo">
-    <h1>Todo en Blanco</h1>
-    <span>Logística para el interior del país</span>
-  </div>
-  <br>
-  <div style="text-align: center;">
-    <button>Ingresar al sistema</button>
-  </div>
-  <br>
-  <!--Botones pedidos por el cliente que enviaran a las paginas correspondientes-->
-  <div style="display: flex; justify-content: space-between;">
-    <!-- 
-display: flex; pone los elementos en línea
-justify-content: space-between; uno se va totalmente a la izquierda
-el otro totalmente a la derecha-->
-    <a href="pagConsulta.html"><button>Consultas</button></a>
-    <a href="pagTrabajo.html"><button>¡Trabaja con nosotros!</button></a>
-  </div>
-  <br><br>
+    <br>
+    <br>
+    <div style="text-align: center;">
+      <img style="height: 100px;" src="../assets/img/logo.png" alt="Logo">
+      <h1>Todo en Blanco</h1>
+      <span>Logística para el interior del país</span>
+    </div>
+  </header>
+   <!--Navegacion-->
+<nav class="navbar">
+    <div class="nav-container">
+        
+        <!-- Logo o nombre -->
+        <div class="nav-logo">
+            <a href="index.html">Todo en Blanco</a>
+        </div>
 
-  <hr color="black">
+        <!-- Links de navegación -->
+        <ul class="nav-menu">
+            <li><a href="pagContactanos.html">Contactanos</a></li>
+            <li><a href="pagTrabajo.html">Trabaja con nosotros</a></li>
+        </ul>
+
+    </div>
+</nav>
+
 
   <h1> Nuestra Propuesta de valor</h1>
-    <ul>
-        <li>Un servicio de logística pensado para el interior, donde no siempre llegan todos, pero nosotros sí. </li>
-        <li>Nos destacamos por ser cercanos, cumplir con los tiempos y tratar cada envío como si fuera propio. No somos
-            una empresa grande e impersonal: conocemos las rutas, a la gente y cómo se mueve la mercadería en cada zona.
-        </li>
-        <li>Brindamos soluciones simples, claras y confiables, adaptándonos a lo que cada cliente necesita, sin vueltas
-            ni complicaciones.</li>
-        <li>Con nosotros, sabés quién lleva tu carga y podés quedarte tranquilo de que va a llegar.</li>
-    </ul>
+  <ul>
+    <li>Un servicio de logística pensado para el interior, donde no siempre llegan todos, pero nosotros sí. </li>
+    <li>Nos destacamos por ser cercanos, cumplir con los tiempos y tratar cada envío como si fuera propio. No somos
+      una empresa grande e impersonal: conocemos las rutas, a la gente y cómo se mueve la mercadería en cada zona.
+    </li>
+    <li>Brindamos soluciones simples, claras y confiables, adaptándonos a lo que cada cliente necesita, sin vueltas
+      ni complicaciones.</li>
+    <li>Con nosotros, sabés quién lleva tu carga y podés quedarte tranquilo de que va a llegar.</li>
+  </ul>
 
-    <hr color="black">
+  <hr color="black">
 
   <h1 style="text-align: center;">Testimonios de clientes</h1>
 
   <div>
- <figure>
-   <br>
-    <img src="../assets/img/Horacio.png" alt="Horacio">
-    <br>
-    <cite>Horacio Corantes</cite>
-    <blockquote>“Trabajo con ellos hace años y la verdad, nunca me han fallado. La mercadería llega cuando tiene que llegar y
-      siempre están a la orden para lo que se precise. Hoy en día eso vale oro.”</blockquote>
+    <figure>
       <br>
-      </figure>
+      <img src="../assets/img/Horacio.png" alt="Horacio">
+      <br>
+      <cite>Horacio Corantes</cite>
+      <blockquote>“Trabajo con ellos hace años y la verdad, nunca me han fallado. La mercadería llega cuando tiene que
+        llegar y
+        siempre están a la orden para lo que se precise. Hoy en día eso vale oro.”</blockquote>
+      <br>
+    </figure>
   </div>
   <br>
   <div>
     <figure>
-   <br>
-    <img src="../assets/img/Austberto.png" alt="Austberto">
-    <br> 
-    <cite>Austeberto Heneda</cite>
-    <blockquote>“Gente seria y de confianza. En el interior nos conocemos todos, y si seguís trabajando con alguien es porque
-      cumplen. Yo los recomiendo tranquilo.”</blockquote>
       <br>
-      </figure>
+      <img src="../assets/img/Austberto.png" alt="Austberto">
+      <br>
+      <cite>Austeberto Heneda</cite>
+      <blockquote>“Gente seria y de confianza. En el interior nos conocemos todos, y si seguís trabajando con alguien es
+        porque
+        cumplen. Yo los recomiendo tranquilo.”</blockquote>
+      <br>
+    </figure>
   </div>
   <br>
-  
+
   <div>
     <figure>
-  <br>
-    <img src="../assets/img/Pincho.png" alt="Pincho">
-   <br>
-    <cite>Pincho Filoseda</cite>
-    <blockquote>“Más allá de alguna ida y vuelta, siempre terminamos arreglando bien. Laburan firme y no te dejan tirado, que
-      es lo importante en este rubro.”</blockquote>
       <br>
-      </figure>
+      <img src="../assets/img/Pincho.png" alt="Pincho">
+      <br>
+      <cite>Pincho Filoseda</cite>
+      <blockquote>“Más allá de alguna ida y vuelta, siempre terminamos arreglando bien. Laburan firme y no te dejan
+        tirado, que
+        es lo importante en este rubro.”</blockquote>
+      <br>
+    </figure>
   </div>
   <br>
   <hr color="black">
@@ -304,8 +256,8 @@ el otro totalmente a la derecha-->
     <br>
 
 
-    <p> | <a target="_blank" href="https://www.facebook.com/">Facebook</a> | <a target="_blank"
-        href="https://www.x.com/">X</a> | <a target="_blank" href="https://www.instagram.com/">Instagram</a> | <a href="pagEmpresa.html">Sobre Nosotros</a> | </p>
+    <p> | <a target="_blank" href="https://www.instagram.com/">Instagram</a> | <a
+        href="pagEmpresa.html">Sobre Nosotros</a> | </p>
   </footer>
 
   <!-- El padding es para que el pie de página se limite a la parte inferior de la página -->

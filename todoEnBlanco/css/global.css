@@ -1,0 +1,64 @@
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+hr {
+    color: black;
+}
+
+.btn {
+    display: inline-block;
+    background-color: white;
+    color: black;
+    border: 2px solid black;
+    padding: 5px 20px;
+    cursor: pointer;
+    transition: 0.2s;
+    text-align: center;
+}
+
+.btn:hover {
+    background-color: black;
+    color: white;
+}
+/* Apartado de navegacion*/
+.navbar {
+    background-color: white;
+    border-bottom: 2px solid black;
+    padding: 10px 20px;
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Logo */
+.nav-logo a {
+    font-size: 20px;
+    font-weight: bold;
+    color: black;
+    text-decoration: none;
+}
+
+/* Menú */
+.nav-menu {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-menu li a {
+    text-decoration: none;
+    color: black;
+    padding: 5px 10px;
+    transition: 0.2s;
+}
+
+/* Hover tipo botón */
+.nav-menu li a:hover {
+    background-color: black;
+    color: white;
+}
