@@ -1,16 +1,8 @@
 
 
-        span {
-            display: block;
-            text-align: center;
-        }
 
-        /* Header */
-        header {
-            text-align: center;
-            padding: 30px;
-            border-bottom: 2px solid black;
-        }
+
+    
 
         /* Títulos */
         h1,
@@ -19,11 +11,6 @@
             text-align: center;
         }
 
-        /* Lista */
-        ul {
-            max-width: 400px;
-            margin: auto;
-        }
 
         /* Botones */
         button {
@@ -48,15 +35,18 @@
             border-top: 2px solid black;
             margin-top: 40px;
         }
-        label {
-  display: block;            /* hace que quede arriba */
-  margin-bottom: 5px;
-  padding: 15px;
-}
 
-input, select, textarea {
-  width: 20%;               /* ocupa todo el ancho */
-  padding: 8px;
-  border-radius: 5px;
-  border: 1px solid #aaa;
-}
+        label {
+            display: block;
+            /* hace que quede arriba */
+            margin-bottom: 5px;
+            padding: 5px;
+        }
+
+        input {
+            width: 30%;
+            /* ocupa parte el ancho */
+            padding: 8px;
+            border-radius: 5px;
+            border: 1px solid #aaa;
+        }
