@@ -39,13 +39,16 @@ Ejemplo `<button type="button">Haz clic aquí </button>`
 
 `<u></u>`: Texto subrayado.
 
-`<a>...</a>`: Hipervinculo a otros lugares. Ejemplo: <a href="otraPagina.html" target="_blank">Enlace</a>
-
+`<a>...</a>` → Hipervínculo a otras páginas o recursos
+- `href` → URL de destino
+- `target="_blank"` → Abre en nueva pestaña (opcional)
+- Puede utilizarse como botón mediante clases CSS (ej: class="btn")
 `<ul></ul>`: Lista desordenada.
 
 `<ol></ol>`: Lista ordenada.
 
 `<li></li>`: Indica item de la lista.
+
 
 `<table></table>`: Indica seccion con tabla.
 
@@ -109,3 +112,12 @@ Ejemplo `<button type="button">Haz clic aquí </button>`
 ---
 `maxlength` → Limita la cantidad máxima de caracteres
 `type="submit"` → Envía el formulario y activa validaciones
+
+---
+Estructura semantica:
+`<nav>` → Representa una sección de navegación del sitio (menú principal)
+- `<ul>` y `<li>` → Utilizados también para menús de navegación (estructura de navbar)
+`<header>` → Encabezado de la página o de una sección (títulos, logo, etc.)
+
+`<footer>` → Pie de página con información adicional (copyright, enlaces, etc.)
+     
