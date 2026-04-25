@@ -11,7 +11,10 @@
             text-align: center;
         }
 
+        span.obligatorio {
+            color: red;
 
+        }
         /* Botones */
         button {
 
@@ -43,10 +46,14 @@
             padding: 5px;
         }
 
-        input {
+        input, textarea, select {
             width: 30%;
-            /* ocupa parte el ancho */
             padding: 8px;
             border-radius: 5px;
             border: 1px solid #aaa;
         }
+
+        div.enmarcado {
+    border: 1px solid black;
+    margin: 0 30%;
+}

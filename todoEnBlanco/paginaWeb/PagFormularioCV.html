@@ -12,23 +12,62 @@
     <a href="pagTrabajo.html"><button style="margin: 15px 15px;">Cancelar</button></a>
     <br>
     <h1>Solicitud de trabajo</h1>
-    <p align="center">Campos obligatorios con (<span style="color: red;">*</span>)</p>
+    <p align="center">Campos obligatorios con (<span class="obligatorio">*</span>)</p>
     <div align="center">
         <form action="pagEnvio.html" method="get">
-            <label for="email"><span style="color: red;">*</span> Correo:</label><br>
-            <input type="email" "name="email" placeholder="Ej: Jose@correo.com" maxlength="40" required></input><br><br>
+            <label for="email"><span class="obligatorio">*</span> Correo:</label><br>
+            <input type="email" name="email" placeholder="Ej: Jose@correo.com" maxlength="40" required></input><br><br>
 
-            <label for="descripcion"><span style="color: red;">*</span> Descripción:</label><br>
-            <textarea style="width: 30%; height: 150px; padding: 8px; border-radius: 5px; border: 1px solid #aaa;"
-                placeholder="Dejanos saber un poco mas sobre vos..." name="descripcion" maxlength="300"
+            <label for="descripcion"><span class="obligatorio">*</span> Descripción:</label><br>
+            <textarea name="description" placeholder="Dejanos saber un poco mas sobre vos..." maxlength="300"
                 required></textarea><br>
             <br>
 
-            <label><span style="color: red;">*</span> Envianos tu CV (.pdf):</label><br>
-            <input type="file" accept=".pdf" required></input><br><br>
-            <input style="width: 20px;" type="checkbox" name="contactarse" required>Acepto ser contactado por la
-            empresa</input><br>
+            <label for="edad"><span class="obligatorio">*</span> Ingresa tu edad:</label>
+            <input type="number" id="edad" name="edad" placeholder="Debes ser mayor de edad..."  min="18" max="100"> <br><br>
 
+            <label for="estudios"><span class="obligatorio">*</span> Nivel de estudios:</label>
+            <select name="estudios">
+                <option value="ninguno" selected>Ninguno</option>
+                <option value="secundaria">Ciclo Basico Completo</option>
+                <option value="bachillerato">Bachillerato Completo</option>
+                <option value="universidad">Universidad Completa</option>
+                <option value="terciaria">Educación Terciaria Completa</option>
+                <option value="otros">Otros</option>
+            </select><br><br>
+
+                <span>Contactos de Referencia:</span>
+                <br><br>
+            <div class="enmarcado">
+                <br>
+                <span><span class="obligatorio">*</span> Referencia 1:</span>
+                <label for="nombrer1"><span class="obligatorio">*</span> Nombre:</label>
+                <input autocomplete="name" type="text" name="nombrer1" placeholder="Ej: Juan Perez" maxlength="30" required><br><br>
+                <label for="telefonor1"><span class="obligatorio">*</span> Telefono:</label> <br>
+                <input autocomplete="tel" type="tel" name="telefonor1" placeholder="Ej: 091 234 567" maxlength="9" required><br><br>
+            </div><br>
+            <div class="enmarcado">
+                <br>
+                <span>Referencia 2 (opcional):</span>
+                <label for="nombrer2">Nombre:</label>
+                <input autocomplete="name" type="text" name="nombrer2" placeholder="Ej: Juan Perez" maxlength="30" ><br><br>
+                <label for="telefonor2">Telefono:</label> <br>
+                <input autocomplete="tel" type="tel" name="telefonor2" placeholder="Ej: 091 234 567" maxlength="9" ><br><br>
+            </div><br>
+            <div class="enmarcado">
+                <br>
+                <span>Referencia 3 (opcional):</span>
+                <label for="nombrer3">Nombre:</label>
+                <input autocomplete="name" type="text" name="nombrer3" placeholder="Ej: Juan Perez" maxlength="30" ><br><br>
+                <label for="telefonor3">Telefono:</label> <br>
+                <input autocomplete="tel" type="tel" name="telefonor3" placeholder="Ej: 091 234 567" maxlength="9" ><br><br>
+            </div><br>
+
+            <label for="cv"><span class="obligatorio">*</span> Envianos tu CV (.pdf):</label><br>
+            <input name="cv" type="file" accept=".pdf" required></input><br><br>
+            <input style="width: 20px;" type="checkbox" name="contactarse" required><span class="obligatorio">*</span> Acepto ser contactado por la
+            empresa</input><br>
+            
             <br>
             <button type="submit" value="Submit">Enviar</button><br>
 
