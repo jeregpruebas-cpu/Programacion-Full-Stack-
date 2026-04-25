@@ -84,9 +84,32 @@
 
 ---
 
+## ISSUE 25
+### Nuevas etiquetas y metodos utilizados para las implementaciones solicitadas
+`<div>` → Se utilizaron las etiquetas para enmarcar las areas correspondientes a los contactos de la persona.
+- `class` → Se utilizo la clase `enmarcado` correspondiente a la etiqueta, esto para añadirle el enmarcado a estas etiquetas en especifico.
+
+`<select>` → Se hizo uso de esta etiqueta para especificar grado de estudio alcanzado, un nuevo apartado del formulario de trabajo por petición del cliente
+`<option>` → Etiqueta utilizada para añadir las opciones correspondientes a dicha lista, los metodos utilizados de la misma son:
+- `value` → Atributo requerido dentro de los formularios, esto para mandar la información resultante en caso de ser necesario.
+- `selected` → Atributo utilizado para asignar una opcion por defecto a la hora de cargar la pagina.
+`<input>` → Etiqueta que permite trabajar con entradas de usuario variadas
+- `autocomplete`→ Permite mostrar sugerencias guardadas en el navegador correspondientes al campo especifico.
+- `pattern` → Atributo el cual permite añadir un patron o una estructura especifica requerida en el campo de entrada, en caso de que lo ingresado no cumpla con el mismo, no se continua con el formulario.
+- `inputmode` → Es un atributo que indica el tipo de teclado (en pantalla) debe desplegarse en dispositivos tactiles.
+- `type="number"` Es usado para poder crear un campo variable de numeros, donde, aunque se pueda ingresar texto, solo se puede proceder al ingresar un numero dentro de los valores establecidos como validos.
+
+`<span>` → Uso de clases para tratar con parametros correspondientes de la etiqueta.
+se utilizo la clase `obligatorio` para hacer que el contenido dentro de span sea de color rojo. "<span style="color: red">*</span>"
+
+---
+
 ## ISSUE 26
 `<h1>` Titulos de la pagina.
 - Se editaron el contenido de los `h1` de los formularios para que correspondieran con los asuntos que pidio el cliente, no se uso nada nuevo.
+
+---
+
 ## ISSUE 27
 `<a>...</a>` → Hipervínculo a otras páginas o recursos
 - `href` → URL de destino
