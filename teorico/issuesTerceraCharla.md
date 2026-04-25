@@ -63,3 +63,17 @@
     - `color` → Cambia el color del texto  
 
 ---
+
+## ISSUE 26
+`<h1>` Titulos de la pagina.
+- Se editaron el contenido de los `h1` de los formularios para que correspondieran con los asuntos que pidio el cliente, no se uso nada nuevo.
+## ISSUE 27
+`<a>...</a>` → Hipervínculo a otras páginas o recursos
+- `href` → URL de destino
+`<h1>` Titulos de la pagina.
+
+Se edito el contenido de `a` y `h1` que antes decian consultas, a contactanos
+`<ul></ul>`: Lista desordenada.
+
+`<li></li>`: Indica item de la lista.
+Se anadio mediante una lista los contactos de la empresa
