@@ -84,6 +84,23 @@
 
 ---
 
+## ISSUE 24
+
+### Cambios:
+
+- Se reorganizó el contenido en secciones claras:
+- Historia de la empresa  
+- Misión  
+- Visión  
+- Valores  
+- Identidad corporativa  
+
+- Se mejoró la estructura HTML:
+- Uso de encabezados (`h2`)
+- Uso de listas para valores
+
+---
+
 ## ISSUE 25
 ### Nuevas etiquetas y metodos utilizados para las implementaciones solicitadas
 `<div>` → Se utilizaron las etiquetas para enmarcar las areas correspondientes a los contactos de la persona.
@@ -129,6 +146,40 @@ Se requería que los titulos de los archivos siguieran la convención de nomencl
 El problema es que git no diferenció entre mayúsculas y minúsculas, lo que hacia que los archivos se subieran pero que los nombres no cambiaran a lo requerido.
 
 Tras intentar usar el explorador de archivos y comandos de git para que se detectaran los cambios de nombre, no dimos con una solución que realmente funcionara, por lo que finalmente se optó por modificar los nombres directamente desde github, realizando un commit explicando la situación de una forma mas breve, solucionando por fin el inconveniente.
+
+--- 
+
+## ISSUE 30
+
+### Cambios:
+
+- Se creó una nueva página `pagAdmin.html`.
+
+- Se diseñó una tabla de gestión de empleados que incluye:
+- Columnas: ID, Nombre, Acciones.
+- Botones:
+  - Crear empleado
+  - Modificar
+  - Eliminar
+
+- Se decidió que la tabla sea solo visual  
+- Se agregó un botón de cerrar sesión
+
+--- 
+
+## ISSUE 31
+
+### Cambios:
+
+- Se creó un formulario de inicio de sesión con validaciones
+  - La cédula ahora acepta solo números y exactamente 7 cifras
+
+- La contraseña es obligatoria y tiene límite de caracteres.
+
+- Se agregó funcionalidad para Mostrar/Ocultar contraseña mediante JavaScript
+- Se implementó una redirección automática, al presionar Ingresar el usuario es dirigido a `admin.html`
+
+--- 
 
 ## ISSUE 33
 ### Descripción
