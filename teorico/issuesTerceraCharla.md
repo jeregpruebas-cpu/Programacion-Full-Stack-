@@ -121,6 +121,15 @@ Se edito el contenido de `a` y `h1` que antes decian consultas, a contactanos
 `<li></li>`: Indica item de la lista.
 Se anadio mediante una lista los contactos de la empresa
 
+## ISSUE 29
+Este issue esta relacionado al formato en el cuál se guardaban los archivos de la pagina en el repositorio.
+
+Se requería que los titulos de los archivos siguieran la convención de nomenclatura Camel Case, esto para mantener un mejor funcionamiento y orden sobre todos nuestros archivos y documentos, el tema es que para aplicarlo habia que renombrar todos los archivos correspondientes a la pagina web (imagenes, html, etc.).
+
+El problema es que git no diferenció entre mayúsculas y minúsculas, lo que hacia que los archivos se subieran pero que los nombres no cambiaran a lo requerido.
+
+Tras intentar usar el explorador de archivos y comandos de git para que se detectaran los cambios de nombre, no dimos con una solución que realmente funcionara, por lo que finalmente se optó por modificar los nombres directamente desde github, realizando un commit explicando la situación de una forma mas breve, solucionando por fin el inconveniente.
+
 ## ISSUE 33
 ### Descripción
 
