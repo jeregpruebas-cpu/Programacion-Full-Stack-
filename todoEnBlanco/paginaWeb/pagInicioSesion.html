@@ -5,7 +5,7 @@
 <body>
  <h2>Ingreso al sistema</h2>
 
-<form action="procesar_login.php" method="post">
+<form onsubmit="redirigir(event)">
   
   <label for="cedula">Cédula:</label><br>
   <input 
@@ -27,7 +27,7 @@
     maxlength="12" 
     required>
 
-  <button type="button" onclick="togglePassword()">Mostrar</button>
+  <button type="button" onclick="togglePassword()">Mostrar/Ocultar</button>
 
   <br><br>
 
@@ -43,6 +43,11 @@ function togglePassword() {
   } else {
     input.type = "password";
   }
+}
+
+function redirigir(e) {
+  e.preventDefault(); // evita que recargue
+  window.location.href = "pagAdmin.html"; // redirige
 }
 </script>
     <br>
