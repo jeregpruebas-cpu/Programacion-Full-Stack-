@@ -1,6 +1,7 @@
 <html>
 <head>
   <title>Ingreso al sistema</title>
+   <link rel="stylesheet" href="../css/global.css">
 </head>
 <body>
  <h2>Ingreso al sistema</h2>
@@ -27,11 +28,11 @@
     maxlength="12" 
     required>
 
-  <button type="button" onclick="togglePassword()">Mostrar/Ocultar</button>
+  <button type="button" class="btn" onclick="togglePassword()">Mostrar/Ocultar</button>
 
   <br><br>
 
-  <button type="submit">Ingresar</button>
+<button type="submit" class="btn">Ingresar</button>
 </form>
 
 <script>
@@ -51,4 +52,16 @@ function redirigir(e) {
 }
 </script>
     <br>
+
+    <footer style="padding: 10px; text-align: center;">
+    <br>
+
+    <p> | <a target="_blank" href="https://www.instagram.com/">Instagram</a> | <a
+        href="pagEmpresa.html">Sobre Nosotros</a> | </p>
+         <!-- El padding es para que el pie de página se limite a la parte inferior de la página -->
+  <!-- El <p> es para poder añadir texto (o adornos) a los laterales de los hipervinculos, por si alguien quiere añadir algo más, como por ejemplo, información de contacto. ;) -->
+  <span style="text-align: center;">© 2026 Todo en Blanco - Todos los derechos reservados</span>
+  </footer>
+
+</body>
     </html>

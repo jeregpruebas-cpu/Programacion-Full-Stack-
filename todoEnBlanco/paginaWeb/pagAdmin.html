@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gestión de Empleados</title>
+      <link rel="stylesheet" href="../css/global.css">
      <style>
     body {
       font-family: Arial;
@@ -32,7 +33,7 @@
 
 <h2>Gestión de empleados</h2>
 
-<button>Crear empleado</button>
+<button class="btn">Crear empleado</button>
 
 <br><br>
 
@@ -47,8 +48,9 @@
     <td>1</td>
     <td>Juan Pérez</td>
     <td>
-      <button>Modificar</button>
-      <button>Eliminar</button>
+     
+<button class="btn">Modificar</button>
+<button class="btn">Eliminar</button>
     </td>
   </tr>
 
@@ -56,18 +58,28 @@
     <td>2</td>
     <td>Ana Gómez</td>
     <td>
-      <button>Modificar</button>
-      <button>Eliminar</button>
+   <button class="btn">Modificar</button>
+<button class="btn">Eliminar</button>
     </td>
   </tr>
 
 </table>
 
 <br>
-
-<a href="pagInicioSesion.html">
-  <button>Cerrar sesión</button>
+<a href="pagInicioSesion.html" class="btn">
+  Cerrar sesión
 </a>
+<br>
+
+ <footer style="padding: 10px; text-align: center;">
+    <br>
+
+    <p> | <a target="_blank" href="https://www.instagram.com/">Instagram</a> | <a
+        href="pagEmpresa.html">Sobre Nosotros</a> | </p>
+         <!-- El padding es para que el pie de página se limite a la parte inferior de la página -->
+  <!-- El <p> es para poder añadir texto (o adornos) a los laterales de los hipervinculos, por si alguien quiere añadir algo más, como por ejemplo, información de contacto. ;) -->
+  <span style="text-align: center;">© 2026 Todo en Blanco - Todos los derechos reservados</span>
+  </footer>
 
 </body>
 </html>
