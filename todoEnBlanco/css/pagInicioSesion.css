@@ -1,0 +1,17 @@
+html, body {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+form {
+    flex: 1;
+}
+
+/*estos comandos son para acomodar el contenido arriba del footer, ya que, por falta de contenido,
+ el mismo sube al medio de la pagina, quedando de tal forma que se tuvo que
+ crear un css especifico solo para este caso*/

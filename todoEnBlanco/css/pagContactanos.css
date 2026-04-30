@@ -15,30 +15,13 @@ span {
    display: block;
    text-align: center;
 }
-.btn{
+
+a.centrar-link {
+   display: block;
    text-align: center;
-}
-a {
-   
- display: block;
-   text-align: center;
-}
-button {
-
-   background-color: white;
-   color: black;
-   border: 2px solid black;
-   padding: 5px 15px;
-   cursor: pointer;
-   transition: 0.2s;
-
-}
-
-button:hover {
-   background-color: black;
-   color: white;
+         color: rgb(38, 38, 209)
 }
 
 a {
-   color: rgb(12, 0, 243);
+   color: rgb(38, 38, 209)
 }

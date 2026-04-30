@@ -39,14 +39,6 @@ button:hover {
     color: white;
 }
 
-/* Footer */
-footer {
-    text-align: center;
-    padding: 20px;
-    border-top: 2px solid black;
-    margin-top: 40px;
-}
-
 label {
     display: block;
     /* hace que quede arriba */
@@ -62,4 +54,8 @@ textarea {
     padding: 8px;
     border-radius: 5px;
     border: 1px solid #aaa;
+}
+
+form {
+    text-align: center;
 }

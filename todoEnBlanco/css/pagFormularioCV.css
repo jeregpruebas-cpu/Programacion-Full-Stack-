@@ -1,9 +1,4 @@
 
-
-
-
-    
-
         /* Títulos */
         h1,
         h2,
@@ -29,14 +24,6 @@
         button:hover {
             background-color: black;
             color: white;
-        }
-
-        /* Footer */
-        footer {
-            text-align: center;
-            padding: 20px;
-            border-top: 2px solid black;
-            margin-top: 40px;
         }
 
         label {
