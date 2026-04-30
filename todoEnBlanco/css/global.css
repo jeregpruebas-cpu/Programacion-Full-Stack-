@@ -6,12 +6,12 @@
     --azul-gris: #47606f;
 }
 
-/* RESET BÁSICO */
+/* RESET BÁSICO MAS TIPOGRAFIA E INTERLINEADO*/
 body {
     margin: 0;
     padding: 0;
 
-       font-family: 'Poppins', Arial, sans-serif;
+    font-family: 'Poppins', Arial, sans-serif;
 
     line-height: 1.5;
 
@@ -77,19 +77,21 @@ hr {
 .nav-menu {
     list-style: none;
     display: flex;
-   gap: 10px;
+    gap: 10px;
     margin: 0;
     padding: 0;
-    flex-wrap: wrap; /* evita que se rompa en pantallas chicas */
+    flex-wrap: wrap;
+    /* evita que se rompa en pantallas chicas */
 }
 
 /* LINKS NAV */
 .nav-menu li a {
     color: white;
     padding: 5px 10px;
-    transition: 0.2s;  
+    transition: 0.2s;
     white-space: nowrap;
-    font-size: 14px;  /* evita salto de línea */
+    font-size: 14px;
+    /* evita salto de línea */
 }
 
 /* HOVER NAV */
@@ -123,4 +125,6 @@ footer a {
 /* UTILIDAD */
 .center {
     text-align: center;
+    
 }
+
