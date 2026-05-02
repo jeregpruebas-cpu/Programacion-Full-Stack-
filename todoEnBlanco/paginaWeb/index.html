@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Inicio</title>
-  <link rel="stylesheet" href="../css/global.css">
+    <link rel="stylesheet" href="../css/global.css">
   <link rel="stylesheet" href="../css/index.css">
 
   <!-- Aca añado los atributos de los bordes de las tablas con la etiqueta "<style>"-->
@@ -15,32 +15,34 @@
 <body>
   <br>
   <header>
-    <div>
+    <div style="text-align: center;">
       <img src="../assets/img/logo.png" alt="Logo">
       <h1>Todo en Blanco</h1>
       <span>Logística para el interior del país</span>
     </div>
   </header>
-
-  <nav class="navbar">
+   <!--Navegacion-->
+<nav class="navbar">
     <div class="nav-container">
+        
+        <!-- Logo o nombre -->
+        <div class="nav-logo">
+            <a href="index.html">Todo en Blanco</a>
+        </div>
 
-      <div class="nav-logo">
-        <a href="index.html">Todo en Blanco</a>
-      </div>
-
-      <ul class="nav-menu">
-        <li><a href="pagContactanos.html">Contactanos</a></li>
-        <li><a href="pagTrabajo.html">Trabaja con nosotros</a></li>
-        <li><a href="pagEmpresa.html">Sobre nosostros</a></li>
-        <li><a href="pagInicioSesion.html">Iniciar sesión</a></li>
-      </ul>
+        <!-- Links de navegación -->
+        <ul class="nav-menu">
+            <li><a href="pagContactanos.html">Contactanos</a></li>
+            <li><a href="pagTrabajo.html">Trabaja con nosotros</a></li>
+            <li><a href="pagEmpresa.html">Sobre nosostros</a></li>
+            <li><a href="pagInicioSesion.html">Iniciar sesión</a></li>
+        </ul>
 
     </div>
-  </nav>
+</nav>
 
 
-  <h1 class="center"> Nuestra Propuesta de valor</h1>
+  <h1> Nuestra Propuesta de valor</h1>
   <ul>
     <li>Un servicio de logística pensado para el interior, donde no siempre llegan todos, pero nosotros sí. </li>
     <li>Nos destacamos por ser cercanos, cumplir con los tiempos y tratar cada envío como si fuera propio. No somos
@@ -58,19 +60,21 @@
   <div>
     <figure>
       <br>
-      <img class="foto" src="../assets/img/horacio.png" alt="Horacio">
+      <img src="../assets/img/horacio.png" alt="Horacio">
       <br>
       <cite>Horacio Corantes</cite>
       <blockquote>“Trabajo con ellos hace años y la verdad, nunca me han fallado. La mercadería llega cuando tiene que
-        llegar y siempre están a la orden para lo que se precise. Hoy en día eso vale oro.”</blockquote>
+        llegar y
+        siempre están a la orden para lo que se precise. Hoy en día eso vale oro.”</blockquote>
       <br>
     </figure>
   </div>
+
   <br>
   <div>
     <figure>
       <br>
-      <img class="foto" src="../assets/img/austberto.png" alt="Austberto">
+      <img src="../assets/img/austberto.png" alt="Austberto">
       <br>
       <cite>Austeberto Heneda</cite>
       <blockquote>“Gente seria y de confianza. En el interior nos conocemos todos, y si seguís trabajando con alguien es
@@ -84,7 +88,7 @@
   <div>
     <figure>
       <br>
-      <img class="foto" src="../assets/img/pincho.png" alt="Pincho">
+      <img src="../assets/img/pincho.png" alt="Pincho">
       <br>
       <cite>Pincho Filoseda</cite>
       <blockquote>“Más allá de alguna ida y vuelta, siempre terminamos arreglando bien. Laburan firme y no te dejan
@@ -96,10 +100,10 @@
   <br>
   <hr color="black">
 
-  <h1 class="center"><span> Cobertura Logistica</span></h1>
+  <h1><span class="underline"> Cobertura Logistica</span></h1>
   <br>
 
-  <table>
+  <table >
     <thead>
       <tr>
         <th>Región / Departamento</th>
@@ -204,14 +208,14 @@
   <br>
   <hr color="black">
 
-  <h1 class="center">Categorías de Productos</h1>
+  <h1>Categorías de Productos</h1>
 
-  <div class="container">
+  <div style="margin: 2px solid black;">
 
 
     <figure>
       <h1>Hogar y Muebles</h1>
-      <img class="foto" src="../assets/img/muebles.png" alt="Muebles">
+      <img src="../assets/img/muebles.png" alt="Muebles">
       <figcaption>Muebles, electrodomésticos y artículos de decoración que pueden variar en tamaño y requieren
         manipulación
         cuidadosa.</figcaption>
@@ -219,34 +223,39 @@
 
   </div>
 
-  <div class="container">
+  <div style="margin: 2px solid black;">
     <figure>
       <h1>Tecnología</h1>
-      <img class="foto" src="../assets/img/tecnologia.png" alt="Tecnologia">
+      <img src="../assets/img/tecnologia.png" alt="Tecnologia">
       <figcaption>Dispositivos electrónicos como celulares, computadoras y televisores, considerados productos de alto
         valor.</figcaption>
     </figure>
   </div>
 
-  <div class="container">
+  <div style="margin: 2px solid black;">
     <figure>
       <h1>Textil y Calzado</h1>
-      <img class="foto" src="../assets/img/textil.png" alt="Textil">
+      <img src="../assets/img/textil.png" alt="Textil">
       <figcaption>Prendas de vestir, telas y calzado transportados con protección contra humedad y suciedad.
       </figcaption>
     </figure>
   </div>
 
   <br>
-  <footer>
+
+ 
+  <footer >
     <br>
-    <p> | <a target="_blank" href="https://www.instagram.com/">Instagram</a> | <a href="pagEmpresa.html">Sobre
-        Nosotros</a> | </p>
-    <!-- El <p> es para poder añadir texto (o adornos) a los laterales de los hipervinculos, por si alguien quiere añadir algo más, como por ejemplo, información de contacto. ;) -->
-    <span>© 2026 Todo en Blanco - Todos los derechos reservados</span>
+
+
+    <p> | <a target="_blank" href="https://www.instagram.com/">Instagram</a> | <a
+        href="pagEmpresa.html">Sobre Nosotros</a> | </p>
+         <!-- El padding es para que el pie de página se limite a la parte inferior de la página -->
+  <!-- El <p> es para poder añadir texto (o adornos) a los laterales de los hipervinculos, por si alguien quiere añadir algo más, como por ejemplo, información de contacto. ;) -->
+  <span class="center">© 2026 Todo en Blanco - Todos los derechos reservados</span>
   </footer>
 
-
+ 
 
 </body>
 

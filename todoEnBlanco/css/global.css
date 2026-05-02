@@ -1,3 +1,11 @@
+/* VARIABLES DE COLOR */
+:root {
+    --gris-claro: #c0c0c0;
+    --amarillo: #eeb906;
+    --gris-oscuro: #4e5b64;
+    --azul-gris: #47606f;
+}
+
 body {
     margin: 0;
     padding: 0;

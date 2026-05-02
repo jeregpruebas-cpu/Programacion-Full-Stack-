@@ -1,6 +1,6 @@
 
 img {
-    height: 100px;
+    height: 180px;
 }
 
 .foto {
@@ -12,6 +12,13 @@ img {
     margin: 2px solid black;
 }
 
+.underline {
+    text-decoration: underline;
+}
 
-
-
+.table {
+    width: 800px; margin: auto;
+}
+footer {
+    padding: 10px; text-align: center;
+}
