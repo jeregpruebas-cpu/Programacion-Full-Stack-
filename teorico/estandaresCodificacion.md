@@ -3,8 +3,16 @@
 1. Estructura semántica
 Usar una estructura semántica:
 `<header>, <nav>, <main>, <section>, <article>, <footer>`
+- Usar `<section>` solo cuando haya un bloque de contenido con sentido propio
+  Evitar usar `<section>` solo para agrupar sin significado
+- `<article>` debe usarse solo para contenido independiente (ej: noticias, testimonios)
+No usar `<article>` para layout o estructura
+- Usar `<main>` solo una vez por página
+- Cosas que no puede pasar
  Prohibido usar `<div>`
- Prohibido usar `<script>`
+ Prohibido usar `<script>` (aun no se utiliza)
+ Prohibido usar `<hr>`
+ Prohibido usar `<br>`
 2. Estructura base obligatoria
 
 Todas las páginas deben tener la misma estructura:
@@ -14,8 +22,7 @@ Todas las páginas deben tener la misma estructura:
 `<main>`
 `<footer>`
 
- El header y footer deben ser idénticos en todas las páginas
- No se permiten diferencias de diseño entre páginas
+El header y footer deben mantener una estructura y estilo consistente en todas las páginas
 
 3. Configuración básica del documento
 
