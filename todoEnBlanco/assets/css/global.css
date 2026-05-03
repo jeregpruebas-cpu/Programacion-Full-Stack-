@@ -49,12 +49,12 @@ hr {
     color: black;
 }
 
+
 .navbar {
     background-color: var(--gris-oscuro);
     border-bottom: 3px solid var(--amarillo);
     padding: 10px 20px;
 }
-
 .nav-container {
     display: flex;
     justify-content: space-between;
@@ -63,7 +63,6 @@ hr {
     max-width: 1200px;
     margin: 0 auto;
 }
-
 .nav-logo a {
     font-size: 20px;
     font-weight: bold;
@@ -138,3 +137,5 @@ figure {
     margin: 15px auto;
     width: fit-content;
 }
+
+
