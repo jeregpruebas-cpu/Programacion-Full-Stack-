@@ -4,34 +4,66 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gestión de Empleados</title>
-      <link rel="stylesheet" href="../css/global.css">
-      <link rel="stylesheet" href="../css/pagAdmin.css">
+      <link rel="stylesheet" href="../assets/css/global.css">
+      <link rel="stylesheet" href="../assets/css/pagAdmin.css">
    
 </head>
 
 <body>
+
+  <nav class="navbar">
+    <section class="nav-container">
+
+      <span class="nav-logo">
+        <a href="index.html">Todo en Blanco</a>
+      </span>
+
+      <ul class="nav-menu">
+        <li><a href="pagContactanos.html">Contactanos</a></li>
+        <li><a href="pagTrabajo.html">Trabaja con nosotros</a></li>
+        <li><a href="pagEmpresa.html">Sobre nosotros</a></li>
+    
+      </ul>
+
+    </section>
+  </nav>
+
+
 <header>
-<h1>Gestión de empleados</h1>
+  <h1>Panel de Administración</h1>
 </header>
+ 
 <main>
-<button class="btn">Crear empleado</button>
 
+  <section>
 
-<section>
-<table>
-  <tr>
-    <th>ID</th>
-    <th>Nombre</th>
-    <th>Acciones</th>
-  </tr>
+    <header>
+      <h2>Gestión de empleados</h2>
+    </header>
 
+  <article>
+    <button class="btn">Añadir empleado</button>
+  </article>
+
+  
+
+    <article>
+      <table>
+        <thead>
+          <tr>
+            <th>ID</th>
+            <th>Nombre</th>
+            <th>Acciones</th>
+          </tr>
+        </thead>
+
+       <tbody>
   <tr>
     <td>1</td>
     <td>Juan Pérez</td>
     <td>
-     
-<button class="btn">Modificar</button>
-<button class="btn">Eliminar</button>
+      <button class="btn">Modificar</button>
+      <button class="btn">Eliminar</button>
     </td>
   </tr>
 
@@ -39,27 +71,27 @@
     <td>2</td>
     <td>Ana Gómez</td>
     <td>
-   <button class="btn">Modificar</button>
-<button class="btn">Eliminar</button>
+      <button class="btn">Modificar</button>
+      <button class="btn">Eliminar</button>
     </td>
   </tr>
+</tbody>
 
-</table>
-</section>
+      </table>
+    </article>
 
-<a href="pagInicioSesion.html" class="btn">
-  Cerrar sesión
-</a>
+  </section>
+  <article>
+      <a href="pagInicioSesion.html" class="btn">Cerrar sesión</a>
+    </article>
 </main>
 
  <footer>
-   
-
-
-    <p> | <a target="_blank" href="https://www.instagram.com/">Instagram</a> | <a
-        href="pagEmpresa.html">Sobre Nosotros</a> | </p>
-  <!-- El <p> es para poder añadir texto (o adornos) a los laterales de los hipervinculos, por si alguien quiere añadir algo más, como por ejemplo, información de contacto. -->
-  <span>© 2026 Todo en Blanco - Todos los derechos reservados</span>
+    
+    <p> | <a target="_blank" href="https://www.instagram.com/">Instagram</a> | <a href="pagEmpresa.html">Sobre
+        Nosotros</a> | </p>
+    <!-- El <p> es para poder añadir texto (o adornos) a los laterales de los hipervinculos, por si alguien quiere añadir algo más, como por ejemplo, información de contacto. ;) -->
+    <span>© 2026 Todo en Blanco - Todos los derechos reservados</span>
   </footer>
 
 </body>
