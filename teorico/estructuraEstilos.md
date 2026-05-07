@@ -241,3 +241,45 @@ Esto permite reutilizar código sin generar conflictos.
 - Separación entre estructura (HTML) y diseño (CSS)
 - Uso de Flexbox para distribución de elementos
 - Eliminación de estilos por defecto del navegador (margin, padding en listas)
+
+# Desafio de froggy
+
+## Flexbox
+ 
+1. Justify-content, la cual alinea elementos horizontalmente y acepta los siguientes valores:
+
+flex-start: Alinea elementos al lado izquierdo del contenedor.
+flex-end: Alinea elementos al lado derecho del contenedor.
+center: Alinea elementos en el centro del contenedor.
+space-between: Muestra elementos con la misma distancia entre ellos.
+space-around: Muestra elementos con la misma separación alrededor de ellos.
+2. align-items Esta propiedad CSS alinea elementos verticalmente y acepta los siguientes valores:
+
+flex-start: Alinea elementos a la parte superior del contenedor.
+flex-end: Alinea elementos a la parte inferior del contenedor.
+center: Alinea elementos en el centro (verticalmente hablando) del contenedor.
+baseline: Muestra elementos en la línea base del contenedor
+stretch: Elementos se estiran para ajustarse al contenedor.
+
+3. flex-direction. Esta propiedad CSS define la dirección de los elementos en el contenedor, y acepta los siguientes valores:
+
+row: Elementos son colocados en la misma dirección del texto.
+row-reverse: Elementos son colocados en la dirección opuesta al texto.
+column: Elementos se colocan de arriba hacia abajo.
+column-reverse: Elementos se colocan de abajo hacia arriba.
+4. Para elementos individuales
+- Propiedad order . Por defecto, los elementos tienen un valor 0, pero nosotros podemos usar esta propiedad para establecerlo a un número entero positivo o negativo.
+
+- align-self. Esta propiedad acepta los mismos valores de align-items y sus valores son usados para un elemento específico
+
+5. propiedad flex-wrap, la cual acepta los siguientes valores:
+
+nowrap: Cada elemento se ajusta en una sola línea.
+wrap: los elementos se envuelven alrededor de líneas adicionales.
+wrap-reverse: Los elementos se envuelven alrededor de líneas adicionales en reversa.
+
+6. 
+## Box Model
+
+# Unidades absolutas y realtivas
+
