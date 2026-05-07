@@ -293,9 +293,44 @@ stretch: Las líneas se estiran para ajustarse al contenedor.
 
 Esto puede ser confuso, pero align-content determina el espacio entre las líneas, mientras que align-items determina como los elementos en su conjunto están alineados dentro del contenedor. Cuando hay solo una línea, align-content no tiene efecto.
 
-
 ## Box Model
+
+Todos los elementos HTML se representan como una caja rectangular en CSS, esta caja está formada por diferentes partes que controlan el espacio interno, el borde y la separación con otros elementos.
+
+1. `width`: Sirve para modificar la anchura que tendrá el contenedor del elemento.
+2. `height`: Sirve para modificar la altura que tendrá el contenedor del elemento.
+
+3. `padding`: Es el espacio interno despejado de un contenedor, ideal para evitar problemas con respecto al espacio que poseé el contenido.
+4. `border`: Es un limite o borde que rodea el contenido dentro de la caja. El mismo puede estar oculto o se le pueden asignar distintos parametros.
+`border <grosorBorde> <tipoBorde> <colorBorde>;`
+Ejemplo: `border 1px dotted black;`
+Tipos de borde disponibles:
+- `solid`: Linea solida
+- `dashed`: Lineas entrecortadas
+- `dotted`: Lineas punteadas
+
+5. `margin`: Área exterior del borde vacia, esto para dejar una separación más comoda entre elementos
+
+6. `box-sizing`: Tamaño total usado por una caja.
+Tipos de box-sizing:
+- `content-box` (Default): A la hora de asignarle un tamaño a la caja, sus atributos correspondientes como padding, margenes, etc, se le sumarán, haciendo que el tamaño del contenido pueda superar el tamaño inicial asignado a la caja. 
+- `border-box` (Recomendado): A diferencia de content-box, el tamaño asignado a la caja es el final, adaptando los distintos atributos de la misma para que coincidan con el tamaño solicitado.
+La propiedades presentes no afectan a `margin`.
 
 # Unidades absolutas y realtivas
 
+1. Absolutas: Son valores ya definidos o rigidos, su valor no cambia sin importar que condiciones externas cambien.
+
+- `px`: Píxeles
+- `mm`: Milímetros
+- `cm`: Centímetros
+- `inch`: Pulgadas
+
+2. Realtivas: Son valores variables o elásticas, se basan en las dimensiones de la pagina en la cuál se encuentra para redimensionar el contenido de la pagina.
+
+- `%`: Porcentajes: Medida proporcional al tamaño del contenedor
+- `em`: em: Su tamaño es estable, se basa en el tamaño de fuente de su contenedor padre, creando un efecto en cascada.
+- `rem`: Root "em": Es como "em", pero se basa directamente del tamaño fuente del elemento raiz `<html>`
+- `vh`: Mide un porcentaje del total de altura disponible en la ventana
+- `vw`: Mide un porcentaje del total de disponible en la ventana
 
