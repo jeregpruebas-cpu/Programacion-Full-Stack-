@@ -49,6 +49,12 @@ hr {
     color: black;
 }
 
+.letra-adaptable{
+      font-size: max(2vw, 4vh);
+    /*la función max es para asegurar que el texto sea legible en diferentes tamaños de pantalla,
+    sin importar que sea horizontal o vertical. Al variar el tamaño de la ventana, agarra el valor mas grande con respecto a la ventana.
+    La medida de la altura es el doble de la medida del ancho porque usualmente las pantallas de ordenador son mas anchas que altas.*/
+}
 
 .navbar {
     background-color: var(--gris-oscuro);
