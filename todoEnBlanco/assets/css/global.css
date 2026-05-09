@@ -69,6 +69,18 @@ hr {
     color: white;
 }
 
+.flex-container {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+
+}
+
+.testimonio {
+    width: 30vw;
+    height: auto;
+}
+
 .nav-menu {
     list-style: none;
     display: flex;
