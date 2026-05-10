@@ -14,31 +14,31 @@
 
     <header>
 
-  <nav class="navbar">
-    <section class="nav-container">
+        <nav class="navbar">
+            <section class="nav-container">
 
-      <span class="nav-logo">
-        <a href="index.html">Todo en Blanco</a>
-      </span>
+                <span class="nav-logo">
+                    <a href="index.html">Todo en Blanco</a>
+                </span>
 
-      <ul class="nav-menu">
-        <li><a href="pagContactanos.html">Contactanos</a></li>
-        
-        <li><a href="pagEmpresa.html">Sobre nosotros</a></li>
-        <li><a href="pagInicioSesion.html">Iniciar sesión</a></li>
-      </ul>
+                <ul class="nav-menu">
+                    <li><a href="pagContactanos.html">Contactanos</a></li>
 
-    </section>
-  </nav>
+                    <li><a href="pagEmpresa.html">Sobre nosotros</a></li>
+                    <li><a href="pagInicioSesion.html">Iniciar sesión</a></li>
+                </ul>
 
-</header>
-   
+            </section>
+        </nav>
+
+    </header>
+
     <header>
         <h1>Solicitud de trabajo</h1>
     </header>
-<article>
-    <a href="pagTrabajo.html" class="btn">Cancelar</a>
-</article>
+    <article>
+        <a href="pagTrabajo.html" class="btn">Cancelar</a>
+    </article>
 
 
     <main>
@@ -46,17 +46,16 @@
         <section class="center">
             <form action="pagEnvio.html" method="get">
                 <label for="email"><span class="obligatorio">*</span> Correo:</label>
-                <input type="email" name="email" placeholder="Ej: Jose@correo.com" maxlength="40"
-                    required></input>
+                <input type="email" name="email" placeholder="Ej: Jose@correo.com" maxlength="40" required></input>
 
                 <label for="descripcion"><span class="obligatorio">*</span> Descripción:</label>
                 <textarea name="description" placeholder="Dejanos saber un poco mas sobre vos..." maxlength="300"
                     required></textarea>
-                
+
 
                 <label for="edad"><span class="obligatorio">*</span> Ingresa tu edad:</label>
                 <input type="number" id="edad" name="edad" placeholder="Debes ser mayor de edad..." min="18" max="100"
-                    inputmode="numeric"> 
+                    inputmode="numeric">
 
                 <label for="estudios"><span class="obligatorio">*</span> Nivel de estudios:</label>
                 <select name="estudios">
@@ -69,34 +68,32 @@
                 </select>
 
                 <span>Contactos de Referencia:</span>
-                
+
                 <article class="enmarcado">
-                    
+
                     <span><span class="obligatorio">*</span> Referencia 1:</span>
                     <label for="nombrer1"><span class="obligatorio">*</span> Nombre:</label>
                     <input autocomplete="name" type="text" name="nombrer1" placeholder="Ej: Juan Perez" maxlength="30"
                         required>
-                    <label for="telefonor1"><span class="obligatorio">*</span> Telefono:</label> 
+                    <label for="telefonor1"><span class="obligatorio">*</span> Telefono:</label>
                     <input autocomplete="tel" type="tel" name="telefonor1" placeholder="Ej: 091234567" maxlength="9"
                         pattern="09[0-9]{7}" inputmode="numeric" required>
                 </article>
                 <article class="enmarcado">
-                    
+
                     <span>Referencia 2 (opcional):</span>
                     <label for="nombrer2">Nombre:</label>
-                    <input autocomplete="name" type="text" name="nombrer2" placeholder="Ej: Juan Perez"
-                        maxlength="30">
-                    <label for="telefonor2">Telefono:</label> 
+                    <input autocomplete="name" type="text" name="nombrer2" placeholder="Ej: Juan Perez" maxlength="30">
+                    <label for="telefonor2">Telefono:</label>
                     <input autocomplete="tel" type="tel" name="telefonor2" placeholder="Ej: 091234567"
                         pattern="09[0-9]{7}" maxlength="9" inputmode="numeric">
                 </article>
                 <article class="enmarcado">
-                    
+
                     <span>Referencia 3 (opcional):</span>
                     <label for="nombrer3">Nombre:</label>
-                    <input autocomplete="name" type="text" name="nombrer3" placeholder="Ej: Juan Perez"
-                        maxlength="30">
-                    <label for="telefonor3">Telefono:</label> 
+                    <input autocomplete="name" type="text" name="nombrer3" placeholder="Ej: Juan Perez" maxlength="30">
+                    <label for="telefonor3">Telefono:</label>
                     <input autocomplete="tel" type="tel" name="telefonor3" placeholder="Ej: 091234567" maxlength="9"
                         pattern="09[0-9]{7}" inputmode="numeric">
                 </article>
@@ -104,17 +101,18 @@
                 <label for="cv"><span class="obligatorio">*</span> Envianos tu CV (.pdf):</label>
                 <input name="cv" type="file" accept=".pdf" required class="unalinea"></input>
                 <article class="unalinea">
-                <input type="checkbox" name="contactarse" required ><span class="obligatorio">*</span> Acepto ser contactado por la empresa</input>
-</article>
-                
+                    <input type="checkbox" name="contactarse" required><span class="obligatorio">*</span> Acepto ser
+                    contactado por la empresa</input>
+                </article>
+
                 <button type="submit" class="btn unalinea">Enviar</button>
 
-                
+
         </section>
         </form>
     </main>
     <footer>
-        
+
         <p> | <a target="_blank" href="https://www.instagram.com/">Instagram</a> | <a href="pagEmpresa.html">Sobre
                 Nosotros</a> | </p>
         <!-- El <p> es para poder añadir texto (o adornos) a los laterales de los hipervinculos, por si alguien quiere añadir algo más, como por ejemplo, información de contacto. ;) -->

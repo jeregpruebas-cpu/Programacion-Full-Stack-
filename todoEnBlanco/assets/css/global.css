@@ -80,8 +80,15 @@ hr {
     justify-content: space-between;
     flex-direction: row-reverse;
 
-}
+    width: 80%;
 
+    padding: 30px;
+   
+
+    margin: 20px auto;
+
+    box-sizing: content-box;
+}
 .testimonio {
     width: 30vw;
     height: auto;
@@ -145,9 +152,16 @@ figure {
 }
 
 .bloque {
-    border-bottom: 2px solid var(--gris-oscuro);
-    padding-bottom: 20px;
-    margin-bottom: 20px;
+    width: 80%;
+
+    padding: 30px;
+    
+
+    margin: 20px auto;
+
+    box-sizing: content-box;
+
+    
 }
 
 .unalinea {
