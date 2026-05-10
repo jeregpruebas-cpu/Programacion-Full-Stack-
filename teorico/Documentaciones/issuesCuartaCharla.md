@@ -15,7 +15,7 @@
 Se usa en las secciones principales de contenido, como “Nuestra Propuesta de valor”, “Cobertura Logística” y “Categorías de Productos”.
 
 **Propiedades aplicadas:**
-- `width: 80%` → Hace que la sección ocupe un ancho relativo al tamaño de la ventana.
+- `width: 80vw` → Hace que la sección ocupe un ancho relativo al tamaño de la ventana.
 - `padding: 30px` → Agrega espacio interno entre el contenido y el borde.
 - `margin: 20px auto` → Centra la sección horizontalmente.
 - `box-sizing: content-box` → El `padding` y el `border` se suman al ancho definido.
@@ -27,7 +27,7 @@ Se usa en la sección de testimonios.
 - `display: flex` → Coloca los testimonios en línea.
 - `justify-content: space-between` → Distribuye el espacio entre los elementos.
 - `flex-direction: row-reverse` → Invierte el orden visual de los elementos.
-- `width: 80%` → Mantiene un ancho adaptable al tamaño de la pantalla.
+- `width: (nuevo valor)` → Mantiene un ancho adaptable al tamaño de la pantalla.
 - `padding: 30px` → Agrega espacio interno.
 - `border` → Delimita la sección.
 - `margin: 20px auto` → Centra el contenedor.
