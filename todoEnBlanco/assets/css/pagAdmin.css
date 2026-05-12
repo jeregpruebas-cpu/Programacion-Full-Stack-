@@ -26,4 +26,10 @@ main {
     margin: 20px 0;
   }
 
-    
+  .operaciones {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin: 20px 0;
+    width: fit-content;
+}
