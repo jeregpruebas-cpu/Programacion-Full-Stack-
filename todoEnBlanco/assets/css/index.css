@@ -16,10 +16,6 @@ img {
     width: 10vw;
 }
 
-.productos {
-    width: 40vw;
-}
-
 article {
     margin-bottom: 20px;
 }
@@ -50,7 +46,23 @@ blockquote {
     margin:10px 0;
 }
 
+.productos-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding: 20px;
+}
 
+.productos-container article {
+    max-width: 800px;
+    text-align: center;
+}
 
+.productos {
+    width: 600px;
+    height: auto;
+}
 
-
+.bloque h1 {
+    text-align: center;
+}
