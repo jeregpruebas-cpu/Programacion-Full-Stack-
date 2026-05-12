@@ -42,23 +42,54 @@
 
 
     <main>
-        <p class="center">Campos obligatorios con (<span class="obligatorio">*</span>)</p>
-        <section class="center">
-            <form action="pagEnvio.html" method="get">
-                <label for="email"><span class="obligatorio">*</span> Correo:</label>
-                <input type="email" name="email" placeholder="Ej: Jose@correo.com" maxlength="40" required></input>
 
-                <label for="descripcion"><span class="obligatorio">*</span> Descripción:</label>
-                <textarea name="description" placeholder="Dejanos saber un poco mas sobre vos..." maxlength="300"
+    <p class="center">
+        Campos obligatorios con (<span class="obligatorio">*</span>)
+    </p>
+    <section class="center">
+        <form action="pagEnvio.html" method="get">
+            <article class="campo">
+                <label for="email">
+                    <span class="obligatorio">*</span> Correo:
+                </label>
+                <input 
+                    type="email"
+                    id="email"
+                    name="email"
+                    placeholder="Ej: Jose@correo.com"
+                    maxlength="40"
+                    required>
+            </article>
+            <article class="campo">
+                <label for="descripcion">
+                    <span class="obligatorio">*</span> Descripción:
+                </label>
+                <textarea 
+                    id="descripcion"
+                    name="description"
+                    placeholder="Dejanos saber un poco mas sobre vos..."
+                    maxlength="300"
                     required></textarea>
+            </article>
+            <article class="campo">
+                <label for="edad">
+                    <span class="obligatorio">*</span> Ingresa tu edad:
+                </label>
 
-
-                <label for="edad"><span class="obligatorio">*</span> Ingresa tu edad:</label>
-                <input type="number" id="edad" name="edad" placeholder="Debes ser mayor de edad..." min="18" max="100"
+                <input 
+                    type="number"
+                    id="edad"
+                    name="edad"
+                    placeholder="Debes ser mayor de edad..."
+                    min="18"
+                    max="100"
                     inputmode="numeric">
-
-                <label for="estudios"><span class="obligatorio">*</span> Nivel de estudios:</label>
-                <select name="estudios">
+            </article>
+            <article class="campo">
+                <label for="estudios">
+                    <span class="obligatorio">*</span> Nivel de estudios:
+                </label>
+                <select id="estudios" name="estudios">
                     <option value="ninguno" selected>Ninguno</option>
                     <option value="secundaria">Ciclo Basico Completo</option>
                     <option value="bachillerato">Bachillerato Completo</option>
@@ -66,51 +97,120 @@
                     <option value="terciaria">Educación Terciaria Completa</option>
                     <option value="otros">Otros</option>
                 </select>
-
-                <span>Contactos de Referencia:</span>
-
-                <article class="enmarcado">
-
-                    <span><span class="obligatorio">*</span> Referencia 1:</span>
-                    <label for="nombrer1"><span class="obligatorio">*</span> Nombre:</label>
-                    <input autocomplete="name" type="text" name="nombrer1" placeholder="Ej: Juan Perez" maxlength="30"
+            </article>
+            <h3>Contactos de Referencia</h3>
+            <article class="enmarcado">
+                <h4>
+                    <span class="obligatorio">*</span> Referencia 1
+                </h4>
+                <article class="campo">
+                    <label for="nombrer1">
+                        <span class="obligatorio">*</span> Nombre:
+                    </label>
+                    <input 
+                        autocomplete="name"
+                        type="text"
+                        id="nombrer1"
+                        name="nombrer1"
+                        placeholder="Ej: Juan Perez"
+                        maxlength="30"
                         required>
-                    <label for="telefonor1"><span class="obligatorio">*</span> Telefono:</label>
-                    <input autocomplete="tel" type="tel" name="telefonor1" placeholder="Ej: 091234567" maxlength="9"
-                        pattern="09[0-9]{7}" inputmode="numeric" required>
                 </article>
-                <article class="enmarcado">
-
-                    <span>Referencia 2 (opcional):</span>
+                <article class="campo">
+                    <label for="telefonor1">
+                        <span class="obligatorio">*</span> Telefono:
+                    </label>
+                    <input 
+                        autocomplete="tel"
+                        type="tel"
+                        id="telefonor1"
+                        name="telefonor1"
+                        placeholder="Ej: 091234567"
+                        maxlength="9"
+                        pattern="09[0-9]{7}"
+                        inputmode="numeric"
+                        required>
+                </article>
+            </article>
+            <article class="enmarcado">
+                <h4>Referencia 2 (opcional)</h4>
+                <article class="campo">
                     <label for="nombrer2">Nombre:</label>
-                    <input autocomplete="name" type="text" name="nombrer2" placeholder="Ej: Juan Perez" maxlength="30">
+                    <input 
+                        autocomplete="name"
+                        type="text"
+                        id="nombrer2"
+                        name="nombrer2"
+                        placeholder="Ej: Juan Perez"
+                        maxlength="30">
+                </article>
+                <article class="campo">
                     <label for="telefonor2">Telefono:</label>
-                    <input autocomplete="tel" type="tel" name="telefonor2" placeholder="Ej: 091234567"
-                        pattern="09[0-9]{7}" maxlength="9" inputmode="numeric">
-                </article>
-                <article class="enmarcado">
-
-                    <span>Referencia 3 (opcional):</span>
+                    <input 
+                        autocomplete="tel"
+                        type="tel"
+                        id="telefonor2"
+                        name="telefonor2"
+                        placeholder="Ej: 091234567"
+                        pattern="09[0-9]{7}"
+                        maxlength="9"
+                        inputmode="numeric">
+              </article>
+            </article>
+            <article class="enmarcado">
+                <h4>Referencia 3 (opcional)</h4>
+                <article class="campo">
                     <label for="nombrer3">Nombre:</label>
-                    <input autocomplete="name" type="text" name="nombrer3" placeholder="Ej: Juan Perez" maxlength="30">
+                    <input 
+                        autocomplete="name"
+                        type="text"
+                        id="nombrer3"
+                        name="nombrer3"
+                        placeholder="Ej: Juan Perez"
+                        maxlength="30">
+                </article>
+                <article class="campo">
                     <label for="telefonor3">Telefono:</label>
-                    <input autocomplete="tel" type="tel" name="telefonor3" placeholder="Ej: 091234567" maxlength="9"
-                        pattern="09[0-9]{7}" inputmode="numeric">
-                </article>
 
-                <label for="cv"><span class="obligatorio">*</span> Envianos tu CV (.pdf):</label>
-                <input name="cv" type="file" accept=".pdf" required class="unalinea"></input>
-                <article class="unalinea">
-                    <input type="checkbox" name="contactarse" required><span class="obligatorio">*</span> Acepto ser
-                    contactado por la empresa</input>
-                </article>
-
-                <button type="submit" class="btn unalinea">Enviar</button>
-
-
-        </section>
+                    <input 
+                        autocomplete="tel"
+                        type="tel"
+                        id="telefonor3"
+                        name="telefonor3"
+                        placeholder="Ej: 091234567"
+                        maxlength="9"
+                        pattern="09[0-9]{7}"
+                        inputmode="numeric">
+             </article>
+            </article>
+            <article class="campo">
+                <label for="cv">
+                    <span class="obligatorio">*</span> Envianos tu CV (.pdf):
+                </label>
+                <input 
+                    id="cv"
+                    name="cv"
+                    type="file"
+                    accept=".pdf"
+                    required>
+            </article>
+            <article class="checkbox-container">
+                <input 
+                    type="checkbox"
+                    id="contactarse"
+                    name="contactarse"
+                    required>
+                <label for="contactarse">
+                    <span class="obligatorio">*</span>
+                    Acepto ser contactado por la empresa
+                </label>
+            </article>
+            <button type="submit" class="btn">
+                Enviar
+            </button>
         </form>
-    </main>
+    </section>
+</main>
     <footer>
 
         <p> | <a target="_blank" href="https://www.instagram.com/">Instagram</a> | <a href="pagEmpresa.html">Sobre

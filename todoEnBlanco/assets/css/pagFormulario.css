@@ -49,13 +49,33 @@ label {
 input,
 select,
 textarea {
-    width: 20%;
-    /* ocupa todo el ancho */
+   width: 100%;
+max-width: 400px;
     padding: 8px;
     border-radius: 5px;
     border: 1px solid #aaa;
 }
 
 form {
-    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+}
+
+.campo {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.campo label {
+    width: 180px;
+}
+
+.campo input,
+.campo select,
+.campo textarea {
+    flex: 1;
+    max-width: 400px;
 }

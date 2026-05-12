@@ -34,7 +34,8 @@
         }
 
         input, textarea, select {
-            width: 30%;
+         width: 100%;
+max-width: 400px;
             padding: 8px;
             border-radius: 5px;
             border: 1px solid #aaa;
@@ -43,4 +44,41 @@
         div.enmarcado {
     border: 1px solid black;
     margin: 0 30%;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+}
+
+.campo {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.campo label {
+    width: 220px;
+}
+
+.campo input,
+.campo select,
+.campo textarea {
+    flex: 1;
+    max-width: 400px;
+}
+
+.enmarcado {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 20px;
+}
+
+.checkbox-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
 }

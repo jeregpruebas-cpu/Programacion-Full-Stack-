@@ -48,37 +48,73 @@
     <span>Bienvenido a la pagina del formulario de consultas.</span>
 
     <form action="pagConfirmacion.html">
-      <label for="nombre">Nombre: </label>
-      <input type="text" id="nombre" name="nombre" required placeholder="Ej: Juan" pattern="[A-Za-zÁÉÍÓÚáéíóúñÑ ]+"
-        maxlength="30">
+  <article class="campo">
+    <label for="nombre">Nombre:</label>
+    <input 
+      type="text" 
+      id="nombre" 
+      name="nombre" 
+      required 
+      placeholder="Ej: Juan"
+      pattern="[A-Za-zÁÉÍÓÚáéíóúñÑ ]+"
+      maxlength="30">
+  </article>
+  <article class="campo">
+    <label for="apellido">Apellido:</label>
+    <input 
+      type="text" 
+      id="apellido" 
+      name="apellido" 
+      placeholder="Ej: Alvarez">
+  </article>
+  <article class="campo">
+    <label for="email">Email:</label>
+    <input 
+      type="email" 
+      id="email" 
+      name="email" 
+      placeholder="Ej: Maria@gmail.com"
+      maxlength="50"
+      autocomplete="email"
+      pattern=".*\.com$"
+      required>
+  </article>
+  <article class="campo">
+    <label for="telefono">Numero telefonico:</label>
+    <input 
+      type="tel" 
+      id="telefono" 
+      name="telefono"
+      placeholder="Ej: 099123456"
+      pattern="09[0-9]{7}"
+      maxlength="9"
+      inputmode="numeric">
+  </article>
+  <article class="campo">
+    <label for="categoria">Categoria:</label>
+    <select id="categoria" name="categoria" required>
+      <option value="">Seleccione una opción</option>
+      <option value="catalogo">Catálogo</option>
+      <option value="respuesta">Respuesta</option>
+      <option value="desperfectos">Desperfectos</option>
+    </select>
+  </article>
+  <article class="campo">
+    <label for="descripcion">Descripción:</label>
+    <textarea 
+      id="descripcion"
+      name="descripcion"
+      required
+      placeholder="Describe tu problema..."
+      rows="5"
+      maxlength="300"></textarea>
+  </article>
 
+  <button type="submit" class="btn unalinea">
+    Enviar consulta
+  </button>
 
-      <label for="apellido">Apellido:</label>
-      <input type="text" id="apellido" name="apellido" placeholder="Ej: Alvarez">
-
-      <label for="email">Email:</label>
-      <input type="email" id="email" name="email" placeholder="Ej: Maria@gmail.com" maxlength="50" autocomplete="email"
-        pattern=".*\.com$" required>
-
-      <label for="telefono"> Numero telefonico:</label>
-      <input type="tel" id="telefono" name="telefono" placeholder="Ej: 099123456" pattern="09[0-9]{7}" maxlength="9"
-        inputmode="numeric">
-
-      <label for="categoria">Categoria:</label>
-      <select id="categoria" name="categoria" required>
-        <option value="">Seleccione una opción</option>
-        <option value="catalogo">Catálogo</option>
-        <option value="respuesta">Respuesta</option>
-        <option value="desperfectos">Desperfectos</option>
-      </select>
-
-      <label for="descripcion">Descripción:</label> <textarea id="descripcion" name="descripcion" required
-        placeholder="Describe tu problema..." rows="5" maxlength="300"></textarea>
-
-
-      <button type="submit" class="btn unalinea">Enviar consulta</button>
-
-    </form>
+</form>
   </main>
   <footer>
 
