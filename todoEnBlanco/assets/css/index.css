@@ -1,11 +1,11 @@
 header {
     background-color: white;
-    border-bottom: 2px solid var(--azul-gris);
-    padding: 20px;
+    border-bottom: 0.2vw solid var(--azul-gris);
+    padding: 2vw;
     text-align: center;
 }
 img {
-    width: 180px;
+    width: 18vw;
 }
 
 .foto {
@@ -17,49 +17,49 @@ img {
 }
 
 article {
-    margin-bottom: 20px;
+    margin-bottom: 2vw;
 }
 .underline {
     text-decoration: underline;
 }
 figure {
-    padding: 15px;
-    border: 1px solid black;
-    margin: 10px
+    padding: 1.5vw;
+    border: 0.1vw solid black;
+    margin: 1vw
 }
 figure cite {
     display: block;
-    margin-top: 10px;
+    margin-top: 1vw;
     font-style: italic;
 }
 .table {
-    width: 800px; margin: auto;
+    width: 80vw; margin: auto;
 }
 footer {
-    padding: 10px; text-align: center;
+    padding: 1vw; text-align: center;
 }
 section article figure cite {
     inline-size: auto;
 }
 
 blockquote {
-    margin:10px 0;
+    margin:1vw 0;
 }
 
 .productos-container {
     display: flex;
     justify-content: center;
-    gap: 30px;
-    padding: 20px;
+    gap: 3vw;
+    padding: 2vw;
 }
 
 .productos-container article {
-    max-width: 800px;
+    max-width: 30vw;
     text-align: center;
 }
 
 .productos {
-    width: 600px;
+    width: 25vw;
     height: auto;
 }
 
