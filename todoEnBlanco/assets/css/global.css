@@ -194,7 +194,13 @@ figure {
     width: fit-content;
 }
 
+#menu-toggle {
+    display: none;
+}
 
+.menu-icon {
+    display: none;
+}
 @media screen and (max-width: 480px) {
 
     body {
@@ -224,4 +230,64 @@ figure {
         width: 70vw;
     }
     
+      .menu-icon {
+
+        display: flex;
+        color: white;
+        font-size: 7vw;
+
+        cursor: pointer;
+    }
+
+    .nav-menu {
+
+        display: none;
+
+        position: absolute;
+
+        top: 100%;
+        right: 0;
+
+        width: 100%;
+
+        background-color: var(--gris-oscuro);
+
+        padding: 1rem;
+
+        gap: 1rem;
+    }
+
+    #menu-toggle:checked ~ .nav-menu {
+
+        display: flex;
+        flex-direction: column;
+    }
+
+    .nav-menu li a {
+    color: white;
+    padding: 0.5vw 1vw;
+    transition: 0.2s;
+    white-space: nowrap;
+    font-size: 5vw;
+    /* evita salto de línea */
 }
+.nav-menu li a:hover {
+    background-color: var(--amarillo);
+    color: black;
+}
+.nav-logo a {
+    font-size: 5vw;
+    font-weight: bold;
+    color: white;
+}
+.nav-container {
+
+    display: flex;
+    justify-content: space-between;
+
+    align-items: center;
+}
+}
+
+
+
