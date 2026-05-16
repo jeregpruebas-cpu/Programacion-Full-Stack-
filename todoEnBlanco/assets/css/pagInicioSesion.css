@@ -21,3 +21,22 @@ input.campo{
     align-items: center;
    
 }
+.tarjeta {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #ffffff ;
+    border: 0.1vw solid black;
+    padding: 4.5vw;
+    padding-bottom: 2.4vw;
+   
+   
+    
+}
+
+@media screen and (max-width: 480px) {
+    .tarjeta {
+        width: 70vw;
+    }
+    
+}

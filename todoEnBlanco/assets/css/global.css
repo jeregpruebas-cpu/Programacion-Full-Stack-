@@ -18,9 +18,11 @@ body {
     flex-direction: column;
     min-height: 100vh;
 }
+
 main {
     flex: 1;
 }
+
 a {
     text-decoration: none;
     color: inherit;
@@ -56,18 +58,19 @@ hr {
     width: 5vw;
 }
 
-.boton-subir:hover{
-            filter: invert(1);
-            /*filter se usa para invertir los colores de la imagen, ya que no se logro cambiar a otra imagen con colores deseados*/
-            transition: 0.2s;
+.boton-subir:hover {
+    filter: invert(1);
+    /*filter se usa para invertir los colores de la imagen, ya que no se logro cambiar a otra imagen con colores deseados*/
+    transition: 0.2s;
 }
+
 .btn:hover {
     background-color: var(--amarillo);
     color: black;
 }
 
-.letra-adaptable{
-      font-size: max(2vw, 4vh);
+.letra-adaptable {
+    font-size: max(2vw, 4vh);
     /*la función max es para asegurar que el texto sea legible en diferentes tamaños de pantalla,
     sin importar que sea horizontal o vertical. Al variar el tamaño de la ventana, agarra el valor mas grande con respecto a la ventana.
     La medida de la altura es el doble de la medida del ancho porque usualmente las pantallas de ordenador son mas anchas que altas.*/
@@ -82,6 +85,7 @@ hr {
     border-bottom: 0.3vw solid var(--amarillo);
     padding: 1vw 1vw;
 }
+
 .nav-container {
     position: relative;
 
@@ -92,6 +96,7 @@ hr {
     max-width: 120vw;
     margin: 0 auto;
 }
+
 .nav-logo a {
     font-size: 1.5vw;
     font-weight: bold;
@@ -180,7 +185,7 @@ figure {
     margin: 2vw auto;
     box-sizing: content-box;
 
-    
+
 }
 
 .unalinea {
@@ -190,3 +195,33 @@ figure {
 }
 
 
+@media screen and (max-width: 480px) {
+
+    body {
+        font-size: 14px;
+    }
+
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    table {
+        display: block;
+        overflow-x: auto;
+    }
+
+    .contenedor {
+        flex-direction: column;
+    }
+
+    .flex-container {
+        flex-direction: column;
+        align-items: center;
+        
+    }
+    .testimonio {
+        width: 70vw;
+    }
+    
+}

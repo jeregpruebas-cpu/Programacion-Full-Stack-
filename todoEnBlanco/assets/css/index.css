@@ -4,6 +4,7 @@ header {
     padding: 2vw;
     text-align: center;
 }
+
 img {
     width: 18vw;
 }
@@ -19,31 +20,39 @@ img {
 article {
     margin-bottom: 2vw;
 }
+
 .underline {
     text-decoration: underline;
 }
+
 figure {
     padding: 1.5vw;
     border: 0.1vw solid black;
     margin: 1vw
 }
+
 figure cite {
     display: block;
     margin-top: 1vw;
     font-style: italic;
 }
+
 .table {
-    width: 80vw; margin: auto;
+    width: 80vw;
+    margin: auto;
 }
+
 footer {
-    padding: 1vw; text-align: center;
+    padding: 1vw;
+    text-align: center;
 }
+
 section article figure cite {
     inline-size: auto;
 }
 
 blockquote {
-    margin:1vw 0;
+    margin: 1vw 0;
 }
 
 .productos-container {
@@ -65,4 +74,28 @@ blockquote {
 
 .bloque h1 {
     text-align: center;
+}
+
+@media screen and (max-width: 480px) {
+
+    .foto {
+        width: 25vw;
+    }
+
+    .productos-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .productos-container article {
+        max-width: 90vw;
+    }
+
+    .productos {
+        width: 100vw;
+    }
+
+    .bloque table {
+        width: 80vw;
+    }
 }
