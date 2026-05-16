@@ -129,7 +129,8 @@ hr {
     gap: 1vw;
     margin: 0;
     padding: 0;
-    flex-wrap: wrap;
+    
+    
 }
 
 .nav-menu li a {
@@ -137,7 +138,7 @@ hr {
     padding: 0.5vw 1vw;
     transition: 0.2s;
     white-space: nowrap;
-    font-size: 0.9vw;
+    font-size:      1vw;
     /* evita salto de línea */
 }
 
