@@ -1,114 +1,209 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gestión de Empleados</title>
-      <link rel="stylesheet" href="../assets/css/global.css">
-      <link rel="stylesheet" href="../assets/css/pagAdmin.css">
-   
+
+    <link rel="stylesheet" href="../assets/css/global.css">
+    <link rel="stylesheet" href="../assets/css/pagAdmin.css">
 </head>
 
 <body id="top">
 
-  <nav class="navbar">
-   <nav class="navbar">
-    <section class="nav-container">
+    <nav class="navbar">
 
-      <!-- Logo o nombre -->
-      <span class="nav-logo">
-        <a href="index.html">Todo en Blanco</a>
-      </span>
-      <input type="checkbox" id="menu-toggle">
+        <section class="nav-container">
 
-      <label for="menu-toggle" class="menu-icon">
-        ☰
-      </label>
+            <span class="nav-logo">
+                <a href="index.html">Todo en Blanco</a>
+            </span>
 
-      <!-- Links de navegación -->
-      <ul class="nav-menu">
-        <li><a href="pagContactanos.html">Contactanos</a></li>
-        <li><a href="pagTrabajo.html">Trabaja con nosotros</a></li>
-        <li><a href="pagEmpresa.html">Sobre nosostros</a></li>
-        <li><a href="pagInicioSesion.html">Iniciar sesión</a></li>
-      </ul>
+            <input type="checkbox" id="menu-toggle">
 
-    </section>
-  </nav>
+            <label for="menu-toggle" class="menu-icon">
+                ☰
+            </label>
 
+            <ul class="nav-menu">
+                <li><a href="pagContactanos.html">Contactanos</a></li>
+                <li><a href="pagTrabajo.html">Trabaja con nosotros</a></li>
+                <li><a href="pagEmpresa.html">Sobre nosotros</a></li>
+                <li><a href="pagInicioSesion.html">Iniciar sesión</a></li>
+            </ul>
 
+        </section>
 
-<header>
-  <h1>Panel de Administración</h1>
-</header>
- 
-<main>
-
-  <section>
+    </nav>
 
     <header>
-      <h2>Gestión de empleados</h2>
+        <h1>Panel de Administración</h1>
     </header>
 
+    <main>
 
-<article class="operaciones">
+        <section class="admin-panel">
 
-    <button class="btn">Añadir empleado</button>
+            <header>
+                <h2>Gestión de empleados</h2>
+            </header>
 
-    <a href="pagInicioSesion.html" class="btn">
-      Cerrar sesión
-    </a>
+            <article class="operaciones">
 
-  </article>
-  
+                <button class="btn" id="btnAltaUsuario">
+    Añadir empleado
+</button>
+
+                <a href="pagInicioSesion.html" class="btn">
+                    Cerrar sesión
+                </a>
+
+            </article>
+
+            <article class="formularioAltaUsuario">
+
+                <h3>Nuevo empleado</h3>
+
+                <form>
+
+                    <article class="campo">
+
+                        <label for="nombreEmpleado">
+                            Nombre:
+    </label>
+<input 
+        type="text"
+    id="nombreEmpleado"
+         name="nombreEmpleado">
+</article>
+   <article class="campo">
+    <label for="cargoEmpleado">
+              Cargo:
+          </label>
+
+                        <input 
+                            type="text"
+                            id="cargoEmpleado"
+                            name="cargoEmpleado">
+
+                    </article>
+
+                    <article class="campo">
+
+                        <label for="correoEmpleado">
+                            Correo:
+                        </label>
+     <input 
+       type="email"
+        id="correoEmpleado"
+             name="correoEmpleado">
+   </article>
+  <article class="operaciones">
+    <button 
+             type="submit"
+        class="btn">
+
+           Guardar
+
+     </button>
+
+     <button 
+           type="button"
+         id="btnCerrarAltaUsuario"
+   class="btn">
+
+            Cancelar
+   </button>
+ </article>
+
+       </form>
+
+      </article>
 
     <article>
-      <table>
-        <thead>
-          <tr>
-            <th>ID</th>
-            <th>Nombre</th>
-            <th>Acciones</th>
-          </tr>
+
+     <table>
+
+   <thead>
+
+           <tr>
+           <th>ID</th>
+             <th>Nombre</th>
+           <th>Acciones</th>
+           </tr>
+
         </thead>
+  <tbody>
+    <tr>
+        <td>1</td>
+       <td>Juan Pérez</td>
 
-       <tbody>
-  <tr>
-    <td>1</td>
-    <td>Juan Pérez</td>
-    <td>
-      <button class="btn">Modificar</button>
-      <button class="btn">Eliminar</button>
-    </td>
-  </tr>
+           <td>
+    <button class="btn">
+                Modificar
+           </button>
+  <button class="btn">
+         Eliminar
+    </button>
 
-  <tr>
-    <td>2</td>
-    <td>Ana Gómez</td>
-    <td>
-      <button class="btn">Modificar</button>
-      <button class="btn">Eliminar</button>
-    </td>
-  </tr>
-</tbody>
+     </td>
+               </tr>
 
-      </table>
-    </article>
+          <tr>
 
-  </section>
-  
-</main>
+          <td>2</td>
+      <td>Ana Gómez</td>
 
- <footer>
+             <td>
+
+          <button class="btn">
+      Modificar
+   </button>
+
+  <button class="btn">
+         Eliminar
+       </button>
+
+     </td>
+
+   </tr>
+
+    </tbody>
+
+    </table>
+      </article>
+
+     </section>
+
+    </main>
+
+    <footer>
+
+     <p>
+      |
+      <a target="_blank" href="https://www.instagram.com/">
+    Instagram
+            </a>
     
-    <p> | <a target="_blank" href="https://www.instagram.com/">Instagram</a> | <a href="pagEmpresa.html">Sobre
-        Nosotros</a> | </p>
-    <!-- El <p> es para poder añadir texto (o adornos) a los laterales de los hipervinculos, por si alguien quiere añadir algo más, como por ejemplo, información de contacto. ;) -->
-    <span>© 2026 Todo en Blanco - Todos los derechos reservados</span>
-  </footer>
+            <a href="pagEmpresa.html">
+       Sobre Nosotros
+            </a>
+       
+        </p>
 
-    <a href="#top" class="boton-subir"><img src="../assets/img/volverArriba.png"/></a>
+        <span>
+            © 2026 Todo en Blanco - Todos los derechos reservados
+        </span>
 
+    </footer>
+
+    <a href="#top" class="boton-subir">
+        <img src="../assets/img/volverArriba.png" alt="Volver arriba">
+    </a>
+
+   <script src="../assets/js/operacionesAdministrador.js"></script>
 
 </body>
+
 </html>
