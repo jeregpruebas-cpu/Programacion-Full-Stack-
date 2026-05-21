@@ -179,6 +179,126 @@ Esto permite aplicar estilos específicos únicamente cuando el ancho de pantall
 - `~` → Selector de hermanos generales utilizado para modificar el menú cuando el checkbox cambia de estado.
 
 ---
-## ISSUE 49: NombreDelIssue
-### Clases, estilos, y propiedades utilizadas
+## ISSUE 49
+
+## Clases Utilizadas
+
+Para cumplir con el requerimiento del formulario oculto en la sección de administrador, se implementaron clases encargadas de:
+- ocultar y mostrar el formulario
+- organizar visualmente los campos
+- mantener compatibilidad con dispositivos móviles y escritorio
+
+### Formulario oculto
+Se creó la clase `formularioAltaUsuario`, encargada de ocultar inicialmente el formulario y organizar su contenido mediante Flexbox.
+
+```css
+.formularioAltaUsuario {
+    display: none;
+
+    flex-direction: column;
+    gap: 20px;
+
+    margin-top: 30px;
+    padding: 20px;
+
+    border: 2px solid #ccc;
+    border-radius: 10px;
+
+    width: 90%;
+    max-width: 600px;
+}
+```
+
+### Organización de campos
+Se añadió la clase `campo` para alinear correctamente cada label con su input correspondiente.
+
+```css
+.campo {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.campo label {
+    width: 220px;
+}
+```
+
+### Organización de botones
+Se reutilizó la clase `operaciones` para mantener alineados y separados los botones del formulario.
+
+```css
+.operaciones {
+    display: flex;
+    gap: 20px;
+}
+```
+
+---
+
+## JavaScript Utilizado
+
+Para mostrar y ocultar el formulario se creó el archivo:
+
+```text
+operacionesAdministrador.js
+```
+
+Con el siguiente código:
+
+```javascript
+document
+    .getElementById("btnAltaUsuario")
+    .addEventListener("click", function () {
+
+        document.querySelector(
+            ".formularioAltaUsuario"
+        ).style.display = "flex";
+
+});
+
+
+document
+    .getElementById("btnCerrarAltaUsuario")
+    .addEventListener("click", function () {
+
+        document.querySelector(
+            ".formularioAltaUsuario"
+        ).style.display = "none";
+
+});
+```
+
+### Además
+Se añadieron identificadores (`id`) a los botones correspondientes para que JavaScript pudiera detectarlos correctamente.
+
+```html
+<button class="btn" id="btnAltaUsuario">
+    Añadir empleado
+</button>
+```
+
+```html
+<button type="button" id="btnCerrarAltaUsuario" class="btn">
+    Cancelar
+</button>
+```
+
+---
+
+## Propiedades Utilizadas
+
+- `display: none` → Oculta inicialmente el formulario.
+- `display: flex` → Muestra el formulario utilizando Flexbox.
+- `flex-direction: column` → Organiza los elementos del formulario verticalmente.
+- `gap: 20px` → Añade separación uniforme entre elementos.
+- `margin-top: 30px` → Genera separación respecto al contenido superior.
+- `padding: 20px` → Añade espacio interno dentro del formulario.
+- `border-radius: 10px` → Redondea las esquinas del formulario.
+- `width: 90%` → Hace el formulario responsive para dispositivos pequeños.
+- `max-width: 600px` → Limita el tamaño máximo en pantallas grandes.
+- `align-items: center` → Centra verticalmente los elementos del contenedor flex.
+- `addEventListener("click")` → Detecta clicks realizados por el usuario.
+- `querySelector()` → Selecciona elementos mediante clases CSS.
+- `getElementById()` → Selecciona elementos mediante su identificador único.
 ---
