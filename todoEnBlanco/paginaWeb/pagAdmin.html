@@ -52,8 +52,8 @@
             <article class="operaciones">
 
                 <button class="btn" id="btnAltaUsuario">
-    Añadir empleado
-</button>
+                    Añadir empleado
+                </button>
 
                 <a href="pagInicioSesion.html" class="btn">
                     Cerrar sesión
@@ -65,131 +65,94 @@
 
                 <h3>Nuevo empleado</h3>
 
-                <form>
+                <form id="formAltaUsuario">
 
                     <article class="campo">
 
                         <label for="nombreEmpleado">
                             Nombre:
-    </label>
-<input 
-        type="text"
-    id="nombreEmpleado"
-         name="nombreEmpleado">
-</article>
-   <article class="campo">
-    <label for="cargoEmpleado">
-              Cargo:
-          </label>
+                        </label>
+                        <input type="text" id="nombreEmpleado" name="nombreEmpleado" required maxlength="30">
+                    </article>
+                    <article class="campo">
 
-                        <input 
-                            type="text"
-                            id="cargoEmpleado"
-                            name="cargoEmpleado">
-
+                        <label for="apellidoEmpleado">
+                            Apellido:
+                        </label>
+                        <input type="text" id="apellidoEmpleado" name="apellidoEmpleado" required maxlength="30">
                     </article>
 
                     <article class="campo">
 
-                        <label for="correoEmpleado">
-                            Correo:
+                        <label for="cedulaEmpleado">
+                            Cedula:
                         </label>
-     <input 
-       type="email"
-        id="correoEmpleado"
-             name="correoEmpleado">
-   </article>
-  <article class="operaciones">
-    <button 
-             type="submit"
-        class="btn">
+                        <input type="text" id="cedulaEmpleado" name="cedulaEmpleado" pattern="[1-9]{1}[0-9]{6}" required
+                            maxlength="8">
+                    </article>
+                    <article class="campo">
 
-           Guardar
+                        <label for="cargoEmpleado">
+                            Cargo:
+                        </label>
+                        <input type="text" id="cargoEmpleado" name="cargoEmpleado" required maxlength="30">
+                    </article>
 
-     </button>
+                    <article class="operaciones">
+                        <button type="submit" class="btn">
 
-     <button 
-           type="button"
-         id="btnCerrarAltaUsuario"
-   class="btn">
+                            Guardar
 
-            Cancelar
-   </button>
- </article>
+                        </button>
 
-       </form>
+                        <button type="button" id="btnCerrarAltaUsuario" class="btn">
 
-      </article>
+                            Cancelar
+                        </button>
+                    </article>
 
-    <article>
+                </form>
 
-     <table>
+            </article>
 
-   <thead>
+            <article>
 
-           <tr>
-           <th>ID</th>
-             <th>Nombre</th>
-           <th>Acciones</th>
-           </tr>
+                <table>
 
-        </thead>
-  <tbody>
-    <tr>
-        <td>1</td>
-       <td>Juan Pérez</td>
+                    <thead>
 
-           <td>
-    <button class="btn">
-                Modificar
-           </button>
-  <button class="btn">
-         Eliminar
-    </button>
+                        <tr>
+                            <th>Cédula</th>
+                            <th>Nombre</th>
+                            <th>Apellido</th>
+                            <th>Cargo</th>
+                        </tr>
 
-     </td>
-               </tr>
+                    </thead>
 
-          <tr>
+                    <tbody id="tablaEmpleados">
 
-          <td>2</td>
-      <td>Ana Gómez</td>
+                    </tbody>
 
-             <td>
+                </table>
+            </article>
 
-          <button class="btn">
-      Modificar
-   </button>
-
-  <button class="btn">
-         Eliminar
-       </button>
-
-     </td>
-
-   </tr>
-
-    </tbody>
-
-    </table>
-      </article>
-
-     </section>
+        </section>
 
     </main>
 
     <footer>
 
-     <p>
-      |
-      <a target="_blank" href="https://www.instagram.com/">
-    Instagram
+        <p>
+            |
+            <a target="_blank" href="https://www.instagram.com/">
+                Instagram
             </a>
-    
+            |
             <a href="pagEmpresa.html">
-       Sobre Nosotros
+                Sobre Nosotros
             </a>
-       
+            |
         </p>
 
         <span>
@@ -202,7 +165,8 @@
         <img src="../assets/img/volverArriba.png" alt="Volver arriba">
     </a>
 
-   <script src="../assets/js/operacionesAdministrador.js"></script>
+    <script src="../assets/js/operacionesAdministrador.js"></script>
+    <script src="../assets/js/altaEmpleados.js"></script>
 
 </body>
 
