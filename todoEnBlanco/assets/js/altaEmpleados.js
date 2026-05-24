@@ -8,8 +8,7 @@ const form = document.getElementById('formAltaUsuario')
 const tabla = document.getElementById('tablaEmpleados')
 
 
-
-form.addEventListener("submit", function(e){
+form.addEventListener("submit", function (e) {
 
     e.preventDefault()
 
@@ -33,8 +32,7 @@ form.addEventListener("submit", function(e){
 
 
 
-const agregarEmpleado = (empleado) =>
-{
+const agregarEmpleado = (empleado) => {
     const fila = document.createElement("tr")
 
     const tdCedula = document.createElement("td")
@@ -52,11 +50,24 @@ const agregarEmpleado = (empleado) =>
     const tdCargo = document.createElement("td")
     tdCargo.textContent = empleado.cargo
 
+    const tdModificar = document.createElement("td")
+    const btnModificar = document.createElement("button")
+    btnModificar.textContent = "Modificar empleado"
+    btnModificar.classList.add("btn")
+    tdModificar.appendChild(btnModificar)
+
+    const tdBaja = document.createElement("td")
+    const btnBaja = document.createElement("button")
+    btnBaja.textContent = "Baja empleado"
+    btnBaja.classList.add("btn")
+    tdBaja.appendChild(btnBaja)
+
     fila.appendChild(tdCedula)
     fila.appendChild(tdNombre)
     fila.appendChild(tdApellido)
     fila.appendChild(tdCargo)
-
+    fila.appendChild(tdModificar)
+    fila.appendChild(tdBaja)
     tabla.appendChild(fila)
 
 }
